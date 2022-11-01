@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "RPG_test",
   "resources": [
+    {"id":{"name":"spr_marcos_up","path":"sprites/spr_marcos_up/spr_marcos_up.yy",},"order":11,},
     {"id":{"name":"spr_arrow_right","path":"sprites/spr_arrow_right/spr_arrow_right.yy",},"order":0,},
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
