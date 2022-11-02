@@ -1,2 +1,2 @@
-# RPG_test
+# UGT
 El tutorial del gamemaker
