@@ -1,7 +1,7 @@
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+right_key = keyboard_check(ord("D"));
+left_key = keyboard_check(ord("A"));
+up_key = keyboard_check(ord("W"));
+down_key = keyboard_check(ord("S"));
 
 xspd = (right_key - left_key) * move_spd;
 yspd = (down_key - up_key) * move_spd;
@@ -44,6 +44,13 @@ if place_meeting(x, y + yspd, obj_wall) == true
 x += xspd;
 y += yspd;
 
+
+//go to menu
+menu_key = keyboard_check_pressed(vk_enter);
+
+if menu_key{
+	room_goto(rm_title);	
+}
 
 
 
