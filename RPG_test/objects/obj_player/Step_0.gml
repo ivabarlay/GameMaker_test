@@ -26,8 +26,16 @@ if xspd == 0
 if yspd > 0	&& face = UP {face = DOWN};	
 if xspd < 0	&& face = DOWN {face = UP};
 	}
+	
+
+
+
 
 sprite_index = sprite[face];
+if face_stood > 0 {image_index = face_stood};
+
+
+
 
 //collisions
 if place_meeting(x + xspd, y, obj_wall) == true
