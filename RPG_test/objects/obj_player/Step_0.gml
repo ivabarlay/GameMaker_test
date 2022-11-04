@@ -32,7 +32,7 @@ if xspd < 0	&& face = DOWN {face = UP};
 
 
 sprite_index = sprite[face];
-if face_stood > 0 {image_index = face_stood};
+
 
 
 
@@ -67,5 +67,15 @@ if menu_key{
 //animate
 if xspd == 0 && yspd == 0
 	{
-	image_index = 0;
+		if face = LEFT{
+			sprite_index = sprite[STOOD];
+			image_index = 1;
+		}
+		if face = RIGHT{
+			sprite_index = sprite[STOOD];
+			image_index = 0;
+		}
+
 	} 
+
+
