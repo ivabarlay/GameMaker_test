@@ -30,5 +30,19 @@ function scr_collision() {
 		room_goto_next();
 	}
 	
+	if place_meeting(x + xspd, y, obj_gate_exit) {
+		while(!place_meeting(x + sign(xspd), y, obj_gate_exit)){
+			x += sign(xspd);
+		}
+		room_goto_previous();
+	}
+	
+	if place_meeting(x, y + yspd, obj_gate_exit){
+		while(!place_meeting(x , y + sign(yspd), obj_gate_exit)){
+			y += sign(yspd);
+		}
+		room_goto_previous();
+	}
+	
 
 }

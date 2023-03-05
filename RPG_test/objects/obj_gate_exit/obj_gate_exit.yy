@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_gate",
+  "name": "obj_gate_exit",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

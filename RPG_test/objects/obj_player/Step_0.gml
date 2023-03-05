@@ -9,26 +9,9 @@ yspd = (down_key - up_key) * move_spd;
 //set sprite
 mask_index = sprite[DOWN];
 
-if (yspd == 0) {  
-	if xspd > 0 {face = RIGHT}
-	if xspd < 0 {face = LEFT}
-	}
-if xspd > 0	&& face = LEFT {face = RIGHT};	
-if xspd < 0	&& face = RIGHT {face = LEFT};	
-
-if xspd == 0{  
-	if yspd > 0 {face = DOWN};
-	if yspd < 0 {face = UP};
-
-
-if yspd > 0	&& face = UP {face = DOWN};	
-if xspd < 0	&& face = DOWN {face = UP};
-	}
+scr_player_sprite();
 	
 sprite_index = sprite[face];
-
-
-
 
 
 //collisions
@@ -47,14 +30,10 @@ if menu_key{
 }
 
 
-
-
-
 //animate
 if xspd == 0 && yspd == 0
 	{
 		image_index = 0;
 
 	} 
-
 

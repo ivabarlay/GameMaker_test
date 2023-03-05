@@ -37,6 +37,7 @@
   },
   "resources": [
     {"id":{"name":"spr_marcos_down","path":"sprites/spr_marcos_down/spr_marcos_down.yy",},"order":0,},
+    {"id":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},"order":1,},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},"order":4,},
     {"id":{"name":"spr_marcos_left","path":"sprites/spr_marcos_left/spr_marcos_left.yy",},"order":7,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":2,},
@@ -49,6 +50,7 @@
     {"id":{"name":"spr_placeholder_left","path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},"order":3,},
     {"id":{"name":"spr_marcos","path":"sprites/spr_marcos/spr_marcos.yy",},"order":2,},
     {"id":{"name":"spr_title_menu","path":"sprites/spr_title_menu/spr_title_menu.yy",},"order":1,},
+    {"id":{"name":"scr_player_sprite","path":"scripts/scr_player_sprite/scr_player_sprite.yy",},"order":2,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":3,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":0,},
     {"id":{"name":"spr_placeholder_down","path":"sprites/spr_placeholder_down/spr_placeholder_down.yy",},"order":0,},
@@ -59,6 +61,7 @@
     {"id":{"name":"spr_tile_cave","path":"sprites/spr_tile_cave/spr_tile_cave.yy",},"order":1,},
     {"id":{"name":"p_unit","path":"objects/p_unit/p_unit.yy",},"order":3,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":2,},
+    {"id":{"name":"obj_gate_exit","path":"objects/obj_gate_exit/obj_gate_exit.yy",},"order":5,},
     {"id":{"name":"spr_placeholder_right","path":"sprites/spr_placeholder_right/spr_placeholder_right.yy",},"order":1,},
     {"id":{"name":"spr_marcos_up","path":"sprites/spr_marcos_up/spr_marcos_up.yy",},"order":4,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":3,},
@@ -72,6 +75,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"roomId":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},
     {"roomId":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
   ],
   "TextureGroups": [
