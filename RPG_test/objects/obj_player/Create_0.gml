@@ -1,7 +1,7 @@
 xspd = 0;
 yspd = 0;
 
-move_spd =1
+move_spd =2
 
 sprite[RIGHT] = spr_placeholder_right;
 sprite[UP] = spr_placeholder_up;

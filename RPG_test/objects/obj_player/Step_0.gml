@@ -32,15 +32,7 @@ sprite_index = sprite[face];
 
 
 //collisions
-if place_meeting(x + xspd, y, obj_wall) == true
-	{
-	xspd = 0;
-	}
-	
-if place_meeting(x, y + yspd, obj_wall) == true
-	{
-	yspd = 0;
-	}
+scr_collision();
 
 //move the player
 x += xspd;
