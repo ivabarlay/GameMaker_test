@@ -32,6 +32,7 @@
     {"name":"spr_title_menu","order":1,"path":"sprites/spr_title_menu/spr_title_menu.yy",},
     {"name":"rm_combat_test","order":2,"path":"rooms/rm_combat_test/rm_combat_test.yy",},
     {"name":"spr_xd","order":8,"path":"sprites/spr_xd/spr_xd.yy",},
+    {"name":"spr_tile_cave","order":11,"path":"sprites/spr_tile_cave/spr_tile_cave.yy",},
     {"name":"p_unit","order":3,"path":"objects/p_unit/p_unit.yy",},
     {"name":"obj_title_menu","order":2,"path":"objects/obj_title_menu/obj_title_menu.yy",},
     {"name":"spr_placeholder_right","order":1,"path":"sprites/spr_placeholder_right/spr_placeholder_right.yy",},
