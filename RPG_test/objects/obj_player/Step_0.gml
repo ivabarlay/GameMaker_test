@@ -31,9 +31,7 @@ if menu_key{
 
 
 //animate
-if xspd == 0 && yspd == 0
-	{
+if xspd == 0 && yspd == 0{
 		image_index = 0;
-
 	} 
 
