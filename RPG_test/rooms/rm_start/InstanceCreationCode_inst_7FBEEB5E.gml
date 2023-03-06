@@ -1,0 +1,1 @@
+startPlayerPosition = [20, 103];

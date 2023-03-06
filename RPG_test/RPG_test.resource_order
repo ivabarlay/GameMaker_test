@@ -31,7 +31,6 @@
     {"name":"spr_marcos","order":2,"path":"sprites/spr_marcos/spr_marcos.yy",},
     {"name":"spr_title_menu","order":1,"path":"sprites/spr_title_menu/spr_title_menu.yy",},
     {"name":"scr_player_sprite","order":2,"path":"scripts/scr_player_sprite/scr_player_sprite.yy",},
-    {"name":"obj_menu_ingame","order":7,"path":"objects/obj_menu_ingame/obj_menu_ingame.yy",},
     {"name":"obj_solid","order":3,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"spr_gate","order":12,"path":"sprites/spr_gate/spr_gate.yy",},
     {"name":"rm_combat_test","order":2,"path":"rooms/rm_combat_test/rm_combat_test.yy",},
