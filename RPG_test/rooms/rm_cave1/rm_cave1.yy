@@ -7,8 +7,8 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_7C6D378F","path":"rooms/rm_cave1/rm_cave1.yy",},
     {"name":"inst_143F3539","path":"rooms/rm_cave1/rm_cave1.yy",},
+    {"name":"inst_7C6D378F","path":"rooms/rm_cave1/rm_cave1.yy",},
   ],
   "isDnd": false,
   "layers": [

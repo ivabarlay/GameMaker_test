@@ -20,7 +20,7 @@ if accept_key{
 		case 0:
 		switch(pos){
 			//start game
-			case 0: room_goto_next();
+			case 0: room_goto(1);
 				break;				
 			//settings		
 			case 1:	menu_level = 1;
@@ -47,3 +47,4 @@ if accept_key{
 	//store number of options in menu
 	op_length = array_length(option[menu_level])
 }
+
