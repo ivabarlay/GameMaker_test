@@ -4,6 +4,7 @@
     {"name":"CombatSystem","order":16,"path":"folders/CombatSystem.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"menuGame","order":17,"path":"folders/menuGame.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -18,7 +19,6 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"TitleMenu","order":15,"path":"folders/TitleMenu.yy",},
-    {"name":"menuGame","order":17,"path":"folders/menuGame.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"rm_cave1","order":1,"path":"rooms/rm_cave1/rm_cave1.yy",},

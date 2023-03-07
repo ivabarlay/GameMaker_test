@@ -26,9 +26,18 @@ y += yspd;
 menu_key = keyboard_check_pressed(vk_enter);
 
 if menu_key{
-	instance_create_depth(50, 100, 0, obj_menu_game);	
+	menuGame = !menuGame;
 }
 
+if(menuGame){
+	instance_create_depth(0, 145, 0, obj_menu_game);	
+}
+
+else{
+	if(instance_exists(obj_menu_game)){
+		instance_destroy(obj_menu_game);
+	}
+}
 
 //animate
 if xspd == 0 && yspd == 0{

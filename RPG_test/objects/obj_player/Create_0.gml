@@ -10,3 +10,4 @@ sprite[DOWN] = spr_placeholder_down;
 
 face = DOWN;
 
+menuGame = false
