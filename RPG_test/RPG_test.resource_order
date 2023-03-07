@@ -18,9 +18,11 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"TitleMenu","order":15,"path":"folders/TitleMenu.yy",},
+    {"name":"menuGame","order":17,"path":"folders/menuGame.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"rm_cave1","order":1,"path":"rooms/rm_cave1/rm_cave1.yy",},
+    {"name":"spr_menu_game","order":1,"path":"sprites/spr_menu_game/spr_menu_game.yy",},
     {"name":"obj_gate","order":4,"path":"objects/obj_gate/obj_gate.yy",},
     {"name":"spr_marcos_left","order":7,"path":"sprites/spr_marcos_left/spr_marcos_left.yy",},
     {"name":"spr_marcos_stood","order":3,"path":"sprites/spr_marcos_stood/spr_marcos_stood.yy",},

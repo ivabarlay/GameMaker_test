@@ -26,7 +26,7 @@ y += yspd;
 menu_key = keyboard_check_pressed(vk_enter);
 
 if menu_key{
-	room_goto(rm_title);	
+	instance_create_depth(50, 100, 0, obj_menu_game);	
 }
 
 

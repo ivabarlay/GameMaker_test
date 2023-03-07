@@ -29,6 +29,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TitleMenu","folderPath":"folders/TitleMenu.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"menuGame","folderPath":"folders/menuGame.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -39,6 +40,7 @@
   "resources": [
     {"id":{"name":"spr_marcos_down","path":"sprites/spr_marcos_down/spr_marcos_down.yy",},},
     {"id":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},
+    {"id":{"name":"spr_menu_game","path":"sprites/spr_menu_game/spr_menu_game.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"spr_marcos_left","path":"sprites/spr_marcos_left/spr_marcos_left.yy",},},
     {"id":{"name":"c_manager","path":"objects/c_manager/c_manager.yy",},},
@@ -47,6 +49,7 @@
     {"id":{"name":"spr_combat_test","path":"sprites/spr_combat_test/spr_combat_test.yy",},},
     {"id":{"name":"spr_placeholder_up","path":"sprites/spr_placeholder_up/spr_placeholder_up.yy",},},
     {"id":{"name":"spr_marcos_right_primero","path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},},
+    {"id":{"name":"obj_menu_game","path":"objects/obj_menu_game/obj_menu_game.yy",},},
     {"id":{"name":"spr_placeholder_left","path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},},
     {"id":{"name":"spr_marcos","path":"sprites/spr_marcos/spr_marcos.yy",},},
     {"id":{"name":"spr_title_menu","path":"sprites/spr_title_menu/spr_title_menu.yy",},},

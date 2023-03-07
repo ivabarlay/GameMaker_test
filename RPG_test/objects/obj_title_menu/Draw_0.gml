@@ -1,7 +1,6 @@
 //dinamically get width and height
 var _new_w = 0;
-for(var i = 0; i < op_length; i++)
-	{
+for(var i = 0; i < op_length; i++){
 		var _op_w = string_width(option[menu_level, i]);
 		_new_w = max(_new_w, _op_w);
 	}
@@ -25,8 +24,7 @@ draw_sprite_ext(sprite_index, image_index, x,
 				
 
 
-for(var i = 0; i < op_length; i++)
-	{
+for(var i = 0; i < op_length; i++){
 		var _c = c_white;
 		if pos == i {_c = c_yellow};
 		draw_text_color(x + op_border, y + op_border + op_space* i, option[menu_level, i], _c, _c, _c, _c, 1);
