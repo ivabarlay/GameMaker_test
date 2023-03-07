@@ -30,8 +30,11 @@ if menu_key{
 }
 
 if(menuGame){
-	instance_create_depth(0, 145, 0, obj_menu_game);	
+	if(!instance_exists(obj_menu_game)){
+		instance_create_depth(0, 145, 0, obj_menu_game);	
+	}
 }
+
 
 else{
 	if(instance_exists(obj_menu_game)){
