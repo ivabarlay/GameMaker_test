@@ -47,4 +47,3 @@ if accept_key{
 	//store number of options in menu
 	op_length = array_length(option[menu_level])
 }
-

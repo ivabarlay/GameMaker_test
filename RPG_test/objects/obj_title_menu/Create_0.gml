@@ -19,3 +19,5 @@ option[1, 2] = "Back";
 
 op_length = 0;
 menu_level = 0;
+
+obj_game.startPlayerPosition = noone;
