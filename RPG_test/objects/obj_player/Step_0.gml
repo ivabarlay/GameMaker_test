@@ -31,7 +31,7 @@ if menu_key{
 
 if(menuGame){
 	if(!instance_exists(obj_menu_game)){
-		instance_create_depth(0, 145, 0, obj_menu_game);	
+		instance_create_depth(0, 1, 0, obj_menu_game);	
 	}
 }
 
@@ -42,6 +42,10 @@ else{
 	}
 }
 
+if(instance_exists(obj_menu_game)){
+	x -= xspd;
+	y -= yspd;
+}
 //animate
 if xspd == 0 && yspd == 0{
 		image_index = 0;
