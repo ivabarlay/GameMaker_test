@@ -6,21 +6,6 @@ down_key = keyboard_check(ord("S"));
 xspd = (right_key - left_key) * move_spd;
 yspd = (down_key - up_key) * move_spd;
 
-//set sprite
-mask_index = sprite[DOWN];
-
-scr_player_sprite();
-	
-sprite_index = sprite[face];
-
-
-//collisions
-scr_collision();
-
-//move the player
-x += xspd;
-y += yspd;
-
 
 //go to menu
 menu_key = keyboard_check_pressed(vk_enter);
@@ -43,9 +28,27 @@ else{
 }
 
 if(instance_exists(obj_menu_game)){
-	x -= xspd;
-	y -= yspd;
+	xspd = 0;
+	yspd = 0;
 }
+
+//set sprite
+mask_index = sprite[DOWN];
+
+scr_player_sprite();
+	
+sprite_index = sprite[face];
+
+
+//collisions
+scr_collision();
+
+//move the player
+x += xspd;
+y += yspd;
+
+
+
 //animate
 if xspd == 0 && yspd == 0{
 		image_index = 0;
