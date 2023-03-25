@@ -29,6 +29,7 @@
     {"name":"spr_combat_test","order":1,"path":"sprites/spr_combat_test/spr_combat_test.yy",},
     {"name":"spr_placeholder_up","order":2,"path":"sprites/spr_placeholder_up/spr_placeholder_up.yy",},
     {"name":"spr_marcos_right_primero","order":2,"path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},
+    {"name":"spr_menu_inv","order":2,"path":"sprites/spr_menu_inv/spr_menu_inv.yy",},
     {"name":"spr_placeholder_left","order":3,"path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},
     {"name":"spr_marcos","order":2,"path":"sprites/spr_marcos/spr_marcos.yy",},
     {"name":"spr_title_menu","order":1,"path":"sprites/spr_title_menu/spr_title_menu.yy",},

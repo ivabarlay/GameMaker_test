@@ -35,7 +35,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"spr_marcos_down","path":"sprites/spr_marcos_down/spr_marcos_down.yy",},},
@@ -50,6 +50,7 @@
     {"id":{"name":"spr_placeholder_up","path":"sprites/spr_placeholder_up/spr_placeholder_up.yy",},},
     {"id":{"name":"spr_marcos_right_primero","path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},},
     {"id":{"name":"obj_menu_game","path":"objects/obj_menu_game/obj_menu_game.yy",},},
+    {"id":{"name":"spr_menu_inv","path":"sprites/spr_menu_inv/spr_menu_inv.yy",},},
     {"id":{"name":"spr_placeholder_left","path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},},
     {"id":{"name":"spr_marcos","path":"sprites/spr_marcos/spr_marcos.yy",},},
     {"id":{"name":"spr_title_menu","path":"sprites/spr_title_menu/spr_title_menu.yy",},},
