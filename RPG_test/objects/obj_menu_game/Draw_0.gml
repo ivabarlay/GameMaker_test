@@ -9,9 +9,9 @@ draw_set_font(global.font_main);
 
 
 for(var i = 0; i < op_length; i++){
-		draw_sprite(sprite[i], image_index, x + op_border, y + op_space * (1 + i));
+		draw_sprite(sprites[i], image_index, x + op_border, y + op_space * (1 + i));
 		
-		if pos == i {draw_sprite(spr_mano_mongolo, image_index, x, y + op_space * (1 + i));}
+		if pos == i {draw_sprite(spr_mano, image_index, x + op_border/2, y + 10 + op_space * (1 + i));}
 	}	
 	
 

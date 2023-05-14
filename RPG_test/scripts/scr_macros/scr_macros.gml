@@ -2,3 +2,5 @@
 #macro UP 1
 #macro LEFT 2
 #macro DOWN 3
+#macro INV 0
+#macro SAVE 1
