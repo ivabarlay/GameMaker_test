@@ -35,15 +35,17 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"spr_marcos_down","path":"sprites/spr_marcos_down/spr_marcos_down.yy",},},
+    {"id":{"name":"spr_menu_save","path":"sprites/spr_menu_save/spr_menu_save.yy",},},
     {"id":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},
     {"id":{"name":"spr_menu_game","path":"sprites/spr_menu_game/spr_menu_game.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"spr_marcos_left","path":"sprites/spr_marcos_left/spr_marcos_left.yy",},},
     {"id":{"name":"c_manager","path":"objects/c_manager/c_manager.yy",},},
+    {"id":{"name":"spr_mano_mongolo","path":"sprites/spr_mano_mongolo/spr_mano_mongolo.yy",},},
     {"id":{"name":"spr_marcos_stood","path":"sprites/spr_marcos_stood/spr_marcos_stood.yy",},},
     {"id":{"name":"tile_cave","path":"tilesets/tile_cave/tile_cave.yy",},},
     {"id":{"name":"spr_combat_test","path":"sprites/spr_combat_test/spr_combat_test.yy",},},

@@ -21,10 +21,12 @@
     {"name":"TitleMenu","order":15,"path":"folders/TitleMenu.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_menu_save","order":3,"path":"sprites/spr_menu_save/spr_menu_save.yy",},
     {"name":"rm_cave1","order":1,"path":"rooms/rm_cave1/rm_cave1.yy",},
     {"name":"spr_menu_game","order":1,"path":"sprites/spr_menu_game/spr_menu_game.yy",},
     {"name":"obj_gate","order":4,"path":"objects/obj_gate/obj_gate.yy",},
     {"name":"spr_marcos_left","order":7,"path":"sprites/spr_marcos_left/spr_marcos_left.yy",},
+    {"name":"spr_mano_mongolo","order":4,"path":"sprites/spr_mano_mongolo/spr_mano_mongolo.yy",},
     {"name":"spr_marcos_stood","order":3,"path":"sprites/spr_marcos_stood/spr_marcos_stood.yy",},
     {"name":"spr_combat_test","order":1,"path":"sprites/spr_combat_test/spr_combat_test.yy",},
     {"name":"spr_placeholder_up","order":2,"path":"sprites/spr_placeholder_up/spr_placeholder_up.yy",},
