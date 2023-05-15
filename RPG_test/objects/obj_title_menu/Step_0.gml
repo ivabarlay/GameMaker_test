@@ -20,7 +20,7 @@ if accept_key{
 		case 0:
 		switch(pos){
 			//start game
-			case 0: room_goto(1);
+			case 0: room_goto(rm_start);
 				break;				
 			//settings		
 			case 1:	menu_level = 1;

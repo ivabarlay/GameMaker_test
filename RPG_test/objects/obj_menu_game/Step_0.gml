@@ -11,9 +11,12 @@ if pos < 0 {pos = op_length - 1};
 
 if(accept_key){
 	switch(pos){
-		case 0: //inventario
+		case 0: // inventario
 		
-		case 1: //guardar
+		case 1: // guardar
+		
+		case 2: // menú
+				room_goto(rm_title)
 		
 
 

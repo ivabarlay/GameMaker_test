@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "menuGame",
-    "path": "folders/menuGame.yy",
+    "name": "sprites",
+    "path": "folders/menuGame/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
