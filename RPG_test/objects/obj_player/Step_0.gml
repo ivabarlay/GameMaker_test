@@ -10,7 +10,7 @@ yspd = (down_key - up_key) * move_spd;
 //go to menu
 menu_key = keyboard_check_pressed(vk_enter);
 
-if menu_key{
+if menu_key && global.selectedMenu == obj_menu_game{
 	menuGame = !menuGame;
 }
 

@@ -3,20 +3,25 @@ down_key = keyboard_check_pressed(ord("S"));
 var accept_key = keyboard_check_pressed(vk_space);
 
 
-pos += down_key - up_key;
+
 op_length = array_length(sprites);
 
-if pos >= op_length {pos = 0};
-if pos < 0 {pos = op_length - 1};
+changePos(obj_menu_game);
+
 
 if(accept_key){
 	switch(pos){
-		case 0: // inventario
+				//inventario
+		case 0: break;
+				
+				// guardar
+		case 1: 
+				break;
 		
-		case 1: // guardar
-		
-		case 2: // menú
-				room_goto(rm_title)
+				// menú
+		case 2: global.selectedMenu = obj_question;
+				instance_create_depth(150, 150, 3, obj_question);
+				break;
 		
 
 
