@@ -1,4 +1,4 @@
-function changePos(object){
+function scr_changePos(object){
 	if(global.selectedMenu == object){
 		pos += down_key - up_key; 
 	}

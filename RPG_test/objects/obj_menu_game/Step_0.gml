@@ -6,7 +6,7 @@ var accept_key = keyboard_check_pressed(vk_space);
 
 op_length = array_length(sprites);
 
-changePos(obj_menu_game);
+scr_changePos(DEFAULT);
 
 
 if(accept_key){

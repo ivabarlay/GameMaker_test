@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_collision",
+  "name": "scr_changePos",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

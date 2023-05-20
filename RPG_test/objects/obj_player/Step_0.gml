@@ -8,37 +8,10 @@ yspd = (down_key - up_key) * move_spd;
 
 
 //go to menu
-menu_key = keyboard_check_pressed(vk_enter);
-
-if menu_key && global.selectedMenu == obj_menu_game{
-	menuGame = !menuGame;
-}
-
-if(menuGame){
-	if(!instance_exists(obj_menu_game)){
-		instance_create_depth(0, 1, 0, obj_menu_game);	
-	}
-}
-
-
-else{
-	if(instance_exists(obj_menu_game)){
-		instance_destroy(obj_menu_game);
-	}
-}
-
-if(instance_exists(obj_menu_game)){
-	xspd = 0;
-	yspd = 0;
-}
+scr_menuGame();
 
 //set sprite
-mask_index = sprite[DOWN];
-
 scr_player_sprite();
-	
-sprite_index = sprite[face];
-
 
 //collisions
 scr_collision();
@@ -48,9 +21,4 @@ x += xspd;
 y += yspd;
 
 
-
-//animate
-if xspd == 0 && yspd == 0{
-		image_index = 0;
-	} 
 

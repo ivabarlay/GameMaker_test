@@ -46,3 +46,56 @@ function scr_collision() {
 	
 
 }
+
+function scr_player_sprite(){
+	mask_index = sprite[DOWN];
+	sprite_index = sprite[face];
+
+	if (yspd == 0) {  
+		if xspd > 0 {face = RIGHT}
+		if xspd < 0 {face = LEFT}
+		}
+	if xspd > 0	&& face = LEFT {face = RIGHT};	
+	if xspd < 0	&& face = RIGHT {face = LEFT};	
+
+	if xspd == 0{  
+		if yspd > 0 {face = DOWN};
+		if yspd < 0 {face = UP};
+
+	if yspd > 0	&& face = UP {face = DOWN};	
+	if xspd < 0	&& face = DOWN {face = UP};
+	}
+	
+	if xspd == 0 && yspd == 0{
+		image_index = 0;
+	} 
+}
+
+
+
+function scr_menuGame(){
+	menu_key = keyboard_check_pressed(vk_enter);
+	if menu_key && global.selectedMenu == obj_menu_game{
+		menuGame = !menuGame;
+		//show_debug_message(global.inv[|0])
+		//show_debug_message(global.inv[|1])
+	}
+
+	if(menuGame){
+		if(!instance_exists(obj_menu_game)){
+			instance_create_depth(0, 1, 0, obj_menu_game);	
+		}
+	}
+
+
+	else{
+		if(instance_exists(obj_menu_game)){
+			instance_destroy(obj_menu_game);
+		}
+	}
+
+	if(instance_exists(obj_menu_game)){
+		xspd = 0;
+		yspd = 0;
+		}	
+}

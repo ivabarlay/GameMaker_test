@@ -5,3 +5,4 @@
 #macro INV 0
 #macro SAVE 1
 #macro TITLE 2
+#macro DEFAULT obj_menu_game
