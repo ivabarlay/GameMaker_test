@@ -1,6 +1,5 @@
-width = 640;
-height = 860; 
-
+width = 220;
+height = 260; 
 op_border = 30;
 op_space = 100;
 

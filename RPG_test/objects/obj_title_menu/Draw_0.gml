@@ -7,6 +7,8 @@ for(var i = 0; i < op_length; i++){
 width = _new_w + op_border *2;	
 height = op_border * 2 + string_height(option[0, 0]) + (op_length-1) *op_space;
 
+view_camera[0] = camera_create_view(0, 0, width + 75, height + 75);
+
 //center menu
 x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - width/2;
 y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - height/2;
