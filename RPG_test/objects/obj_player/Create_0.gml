@@ -1,5 +1,6 @@
 xspd = 0;
 yspd = 0;
+grab_key = keyboard_check(ord("E"));
 
 move_spd = 2;
 
@@ -13,7 +14,3 @@ face = DOWN;
 menuGame = false;
 
 global.inv = ds_list_create();
-//ds_list_add(global.inv, new Sword("espadita", 1, 1, 1));
-//global.inv[|0].addDamage(3);
-//ds_list_add(global.inv, new BasicSword());
-//global.inv[|1].addDamage(2);

@@ -14,6 +14,17 @@ function Sword(name, level, damage, atkSpeed): Item() constructor{
 	}
 }
 
-function BasicSword(): Sword("Espada basica", 1, 1, 1) constructor{
+function BasicSword(): Sword("Espada basica", 1, 1, 1) constructor{}
+
+function Bow(name, level, damage, atkSpeed): Item() constructor{
+	self.name = name;
+	self.level = level;
+	self.damage = damage;
+	self.atkSpeed = atkSpeed;
 	
+	function addDamage(dmg){
+		self.damage += dmg;
+	}
 }
+
+function BasicBow(): Sword("Arco basico", 1, 1, 1) constructor{}
