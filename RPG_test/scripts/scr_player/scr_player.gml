@@ -104,7 +104,7 @@ function scr_pickUp(){
 	r = 12;
 	var items_list = ds_list_create();
 
-	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && grab_key{
+	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && interact_key{
 		itemPicked = items_list[|0];
 		ds_list_add(global.inv, itemPicked.weapon);
 		

@@ -5,7 +5,7 @@ scr_changePos(obj_question);
 
 op_length = array_length(option);
 
-if(accept_key){
+if(accept_key) && global.selectedMenu == obj_question{
 	switch(pos){
 		case 0: room_goto(rm_title);
 				break;

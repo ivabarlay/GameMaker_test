@@ -1,5 +1,5 @@
-function scr_changePos(object){
-	if(global.selectedMenu == object){
+function scr_changePos(obj){
+	if(global.selectedMenu == obj){
 		pos += down_key - up_key; 
 	}
 	if pos >= op_length {pos = 0};

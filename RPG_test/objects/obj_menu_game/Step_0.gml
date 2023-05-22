@@ -9,10 +9,12 @@ op_length = array_length(sprites);
 scr_changePos(DEFAULT);
 
 
-if(accept_key){
+if(accept_key) && global.selectedMenu == obj_menu_game{
 	switch(pos){
 				//inventario
-		case 0: break;
+		case 0: global.selectedMenu = obj_menu_inventory;
+				instance_create_depth(0, 0, 3, obj_menu_inventory);
+				break;
 				
 				// guardar
 		case 1: 
@@ -20,7 +22,7 @@ if(accept_key){
 		
 				// menú
 		case 2: global.selectedMenu = obj_question;
-				instance_create_depth(150, 150, 3, obj_question);
+				instance_create_depth(0, 0, 3, obj_question);
 				break;
 		
 
