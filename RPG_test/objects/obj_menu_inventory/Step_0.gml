@@ -7,8 +7,7 @@ scr_changePos(obj_menu_inventory);
 
 if(accept_key) && global.selectedMenu == obj_menu_inventory{
 	switch(pos){
-		case 0:	show_debug_message(global.inv[? WEAPON_POS][|0]);
-				show_debug_message(global.inv[? WEAPON_POS][|1]);
+		case 0:	instance_create_depth(0, 0, 4, obj_menu_inventory_selector);
 				break;
 		case 1: show_debug_message(global.inv[? ARMOR_POS][|0]);
 				break;
@@ -17,7 +16,7 @@ if(accept_key) && global.selectedMenu == obj_menu_inventory{
 	}	
 }
 
-if(return_key){
-	instance_destroy();
+if(return_key && global.selectedMenu == obj_menu_inventory){
 	global.selectedMenu = obj_menu_game;
+	instance_destroy();
 }

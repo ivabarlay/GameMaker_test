@@ -53,6 +53,7 @@
     {"id":{"name":"c_manager","path":"objects/c_manager/c_manager.yy",},},
     {"id":{"name":"spr_menu_weapon","path":"sprites/spr_menu_weapon/spr_menu_weapon.yy",},},
     {"id":{"name":"spr_mano","path":"sprites/spr_mano/spr_mano.yy",},},
+    {"id":{"name":"obj_menu_inventory_selector","path":"objects/obj_menu_inventory_selector/obj_menu_inventory_selector.yy",},},
     {"id":{"name":"spr_marcos_stood","path":"sprites/spr_marcos_stood/spr_marcos_stood.yy",},},
     {"id":{"name":"tile_cave","path":"tilesets/tile_cave/tile_cave.yy",},},
     {"id":{"name":"spr_helmet","path":"sprites/spr_helmet/spr_helmet.yy",},},

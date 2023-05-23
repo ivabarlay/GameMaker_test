@@ -1,6 +1,6 @@
 up_key = keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(ord("S"));
-var accept_key = keyboard_check_pressed(vk_space);
+accept_key = keyboard_check_pressed(vk_space);
 
 
 
