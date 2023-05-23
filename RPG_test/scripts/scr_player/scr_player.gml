@@ -101,12 +101,21 @@ function scr_menuGame(){
 }
 
 function scr_pickUp(){
+	
+	function chooseItemType(){
+		switch(itemPicked.item.itemKind){
+			case itemType.WEAPON: return WEAPON_POS;
+			case itemType.ARMOR: return ARMOR_POS;
+			//case itemType.POTION: return obj.weapon;
+		}
+	}
+	
 	r = 12;
 	var items_list = ds_list_create();
 
 	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && interact_key{
 		itemPicked = items_list[|0];
-		ds_list_add(global.inv, itemPicked.weapon);
+		ds_list_add(global.inv[? chooseItemType()], itemPicked.item);
 		
 		instance_destroy(itemPicked)
 		

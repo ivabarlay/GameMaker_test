@@ -1,3 +1,3 @@
 self.pickUpable = true;
-self.weapon = new BasicSword();
+self.item = new BasicHelmet();
 self.itemId = self.id;

@@ -1,6 +1,5 @@
 xspd = 0;
 yspd = 0;
-grab_key = keyboard_check(ord("E"));
 
 move_spd = 2;
 
@@ -13,4 +12,3 @@ face = DOWN;
 
 menuGame = false;
 
-global.inv = ds_list_create();

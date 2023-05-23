@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bow",
+  "name": "obj_basic_sword",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -27,18 +26,13 @@
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":16.0,"y":0.0,},
-    {"x":16.0,"y":16.0,},
-    {"x":0.0,"y":16.0,},
-  ],
+  "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bow",
-    "path": "sprites/spr_bow/spr_bow.yy",
+    "name": "spr_sword",
+    "path": "sprites/spr_sword/spr_sword.yy",
   },
   "spriteMaskId": null,
   "visible": true,

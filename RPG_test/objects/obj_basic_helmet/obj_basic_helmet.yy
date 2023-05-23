@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item",
-  "eventList": [],
+  "name": "obj_basic_helmet",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Inventory/items/objects_items.yy",
   },
   "parentObjectId": {
-    "name": "obj_solid",
-    "path": "objects/obj_solid/obj_solid.yy",
+    "name": "obj_item",
+    "path": "objects/obj_item/obj_item.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_helmet",
+    "path": "sprites/spr_helmet/spr_helmet.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

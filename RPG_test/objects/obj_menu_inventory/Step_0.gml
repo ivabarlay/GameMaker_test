@@ -5,15 +5,14 @@ return_key = keyboard_check_pressed(vk_enter);
 
 scr_changePos(obj_menu_inventory);
 
-if(accept_key){
+if(accept_key) && global.selectedMenu == obj_menu_inventory{
 	switch(pos){
-		case 0:	
+		case 0:	//show_debug_message(global.inv[? WEAPON_POS][|0]);
+				//show_debug_message(global.inv[? WEAPON_POS][|1]);
 				break;
-		case 1: 
+		case 1: //show_debug_message(global.inv[? ARMOR_POS][|0]);
 				break;
 		case 2:	
-				break;
-		case 3: 
 				break;
 	}	
 }
