@@ -115,10 +115,10 @@ function scr_pickUp(){
 
 	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && interact_key{
 		itemPicked = items_list[|0];
-		ds_list_add(global.inv[? chooseItemType()], itemPicked.item);
-		
-		instance_destroy(itemPicked)
-		
+		if(itemPicked.pickUpable){
+			ds_list_add(global.inv[? chooseItemType()], itemPicked.item);
+			instance_destroy(itemPicked);
+		}
 		ds_list_clear(items_list);
 	}
 	

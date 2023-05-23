@@ -7,10 +7,10 @@ scr_changePos(obj_menu_inventory);
 
 if(accept_key) && global.selectedMenu == obj_menu_inventory{
 	switch(pos){
-		case 0:	//show_debug_message(global.inv[? WEAPON_POS][|0]);
-				//show_debug_message(global.inv[? WEAPON_POS][|1]);
+		case 0:	show_debug_message(global.inv[? WEAPON_POS][|0]);
+				show_debug_message(global.inv[? WEAPON_POS][|1]);
 				break;
-		case 1: //show_debug_message(global.inv[? ARMOR_POS][|0]);
+		case 1: show_debug_message(global.inv[? ARMOR_POS][|0]);
 				break;
 		case 2:	
 				break;
