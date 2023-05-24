@@ -16,7 +16,3 @@ if(accept_key) && global.selectedMenu == obj_menu_inventory{
 	}	
 }
 
-if(return_key && global.selectedMenu == obj_menu_inventory){
-	global.selectedMenu = obj_menu_game;
-	instance_destroy();
-}

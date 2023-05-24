@@ -74,25 +74,8 @@ function scr_player_sprite(){
 
 
 function scr_menuGame(){
-	menu_key = keyboard_check_pressed(vk_enter);
-	if menu_key && global.selectedMenu == obj_menu_game{
-		menuGame = !menuGame;
-		//show_debug_message(global.inv[|0])
-		//show_debug_message(global.inv[|1])
-	}
-
-	if(menuGame){
-		if(!instance_exists(obj_menu_game)){
-			instance_create_depth(0, 1, 0, obj_menu_game);	
-		}
-	}
 
 
-	else{
-		if(instance_exists(obj_menu_game)){
-			instance_destroy(obj_menu_game);
-		}
-	}
 
 	if(instance_exists(obj_menu_game)){
 		xspd = 0;

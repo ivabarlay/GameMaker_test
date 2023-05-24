@@ -13,3 +13,4 @@ sprites[TITLE] = spr_menu_title;
 
 global.selectedMenu = DEFAULT;
 
+ds_list_add(global.menuPile, obj_menu_game);
