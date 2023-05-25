@@ -2,11 +2,10 @@ width = 245;
 height = 144;
 pos = 0;
 
+selectedItemType = noone;
 
-
-sprites[INV] = spr_menu_inv;
-sprites[SAVE] = spr_menu_save;
-sprites[TITLE] = spr_menu_title;
+sprites = noone;
+op_length = 0;
 
 global.selectedMenu = obj_menu_inventory_selector;
 

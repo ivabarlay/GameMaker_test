@@ -7,8 +7,13 @@ depth = -bbox_bottom;
 				
 draw_set_font(global.font_main);
 
-
-
+switch(self.selectedItemType){
+	case itemType.WEAPON:
+		for(var i = 0; i < op_length - 1; i++){
+			//draw_sprite(sprites[i], -bbox_bottom, 50, 50);	
+		}
+		break;
+}	
 
 
 
