@@ -7,7 +7,9 @@ op_length = array_length(option);
 
 if(accept_key) && global.selectedMenu == obj_question{
 	switch(pos){
-		case 0: room_goto(rm_title);
+		case 0: ds_list_clear(global.inv);
+				ds_list_clear(global.menuPile);
+				room_goto(rm_title);
 				break;
 		case 1:global.selectedMenu = DEFAULT;
 				instance_destroy(obj_question);

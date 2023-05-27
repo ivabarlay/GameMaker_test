@@ -1,15 +1,15 @@
 pos = ds_list_size(global.menuPile) - 1;
+return_key = keyboard_check_pressed(vk_enter);
 
-if((keyboard_check_pressed(vk_enter)) && ds_list_size(global.menuPile) > 0)
-		&& global.menuPile[| ds_list_size(global.menuPile) - 2]  != noone{
-			
+if(instance_exists(obj_player) && return_key){
+	if(pos + 1 == 0){
+		instance_create_depth(0, 0, -bbox_bottom, obj_menu_game);
+		show_debug_message("hijoputa")
+	}
 	
-	
-	global.selectedMenu = global.menuPile[|pos - 1];
-	instance_destroy(global.menuPile[| pos]);
-	ds_list_delete(global.menuPile, pos);
+	else{
+		global.selectedMenu = global.menuPile[|pos -1];
+		instance_destroy(global.menuPile[|pos]);
+		ds_list_delete(global.menuPile, pos);
+	}
 }
-
-if(pos + 1 == 0 && keyboard_check_pressed(vk_enter)){
-			instance_create_depth(0, 1, 0, obj_menu_game);	
-		}
