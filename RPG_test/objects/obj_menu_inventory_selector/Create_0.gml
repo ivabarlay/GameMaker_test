@@ -2,8 +2,10 @@ width = 170;
 height = 144;
 op_space = 55;
 pos = 0;
+posOption = 0;
 scrollPos = 0;
 inv = noone;
+hasSelected = false;
 
 selectedItemType = noone;
 
