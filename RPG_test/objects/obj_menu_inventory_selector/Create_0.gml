@@ -1,11 +1,13 @@
-width = 245;
+width = 170;
 height = 144;
+op_space = 55;
 pos = 0;
 scrollPos = 0;
+inv = noone;
 
 selectedItemType = noone;
 
-sprites = noone;
+spritesInventory = array_create(3);
 op_length = 0;
 
 global.selectedMenu = obj_menu_inventory_selector;

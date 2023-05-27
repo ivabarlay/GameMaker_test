@@ -37,7 +37,21 @@ function Sword(name, level, damage, atkSpeed, sprite): Weapon() constructor{
 	}
 }
 
-function BasicSword(): Sword("Espada basica", 1, 1, 1, obj_basic_sword) constructor{}
+function BasicSword(): Sword("Espada basica", 1, 1, 1, spr_basic_sword) constructor{}
+
+function Dagger(name, level, damage, atkSpeed, sprite): Weapon() constructor{
+	self.name = name;
+	self.level = level;
+	self.damage = damage;
+	self.atkSpeed = atkSpeed;
+	self.itemSprite = sprite;
+	
+	function addDamage(dmg){
+		self.damage += dmg;
+	}
+}
+
+function BasicDagger(): Dagger("Daga basica",1, 1, 1, spr_basic_dagger) constructor{}
 
 function Bow(name, level, damage, atkSpeed, sprite): Weapon() constructor{
 	self.name = name;
@@ -51,7 +65,7 @@ function Bow(name, level, damage, atkSpeed, sprite): Weapon() constructor{
 	}
 }
 
-function BasicBow(): Sword("Arco basico", 1, 1, 1, obj_basic_bow) constructor{}
+function BasicBow(): Sword("Arco basico", 1, 1, 1, spr_basic_bow) constructor{}
 
 
 #macro WEAPON_POS 0

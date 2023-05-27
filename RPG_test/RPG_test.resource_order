@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"spr_menu_save","order":3,"path":"sprites/spr_menu_save/spr_menu_save.yy",},
     {"name":"spr_basic_bow","order":2,"path":"sprites/spr_basic_bow/spr_basic_bow.yy",},
+    {"name":"obj_basic_dagger","order":4,"path":"objects/obj_basic_dagger/obj_basic_dagger.yy",},
     {"name":"spr_mano_inventory","order":6,"path":"sprites/spr_mano_inventory/spr_mano_inventory.yy",},
     {"name":"spr_basic_armor","order":4,"path":"sprites/spr_basic_armor/spr_basic_armor.yy",},
     {"name":"rm_cave1","order":1,"path":"rooms/rm_cave1/rm_cave1.yy",},

@@ -41,6 +41,7 @@
     {"id":{"name":"spr_basic_sword","path":"sprites/spr_basic_sword/spr_basic_sword.yy",},},
     {"id":{"name":"spr_basic_bow","path":"sprites/spr_basic_bow/spr_basic_bow.yy",},},
     {"id":{"name":"obj_basic_bow","path":"objects/obj_basic_bow/obj_basic_bow.yy",},},
+    {"id":{"name":"obj_basic_dagger","path":"objects/obj_basic_dagger/obj_basic_dagger.yy",},},
     {"id":{"name":"spr_mano_inventory","path":"sprites/spr_mano_inventory/spr_mano_inventory.yy",},},
     {"id":{"name":"spr_basic_armor","path":"sprites/spr_basic_armor/spr_basic_armor.yy",},},
     {"id":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},

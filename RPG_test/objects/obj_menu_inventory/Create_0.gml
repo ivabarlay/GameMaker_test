@@ -1,4 +1,4 @@
-op_border = 35;
+op_border = 40;
 op_space = 50;
 pos = 0;
 
