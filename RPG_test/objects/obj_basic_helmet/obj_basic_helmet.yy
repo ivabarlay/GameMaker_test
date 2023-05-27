@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_helmet",
-    "path": "sprites/spr_helmet/spr_helmet.yy",
+    "name": "spr_basic_helmet",
+    "path": "sprites/spr_basic_helmet/spr_basic_helmet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

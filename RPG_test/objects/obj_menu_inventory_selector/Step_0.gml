@@ -4,7 +4,10 @@ inv = global.inv[?selectedItemType];
 
 op_length = ds_list_size(inv);
 
-scr_change_pos_inventory();
+scr_scroll_inventory();
 
-show_debug_message(pos);
+show_debug_message(scrollPos)
+
+
+
 

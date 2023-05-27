@@ -17,8 +17,8 @@ switch(self.selectedItemType){
 
 
 
-
-
+//draw_sprite_stretched(global.inv[?selectedItemType][|0].itemSprite, -bbox_bottom, 50, 50, 100, 100)
+//draw_sprite_stretched(inv[|0].itemSprite, -bbox_bottom, 50, 50, 100, 100)
 
 
 

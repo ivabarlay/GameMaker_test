@@ -1,6 +1,7 @@
 width = 245;
 height = 144;
 pos = 0;
+scrollPos = 0;
 
 selectedItemType = noone;
 

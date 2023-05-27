@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sword",
-    "path": "sprites/spr_sword/spr_sword.yy",
+    "name": "spr_basic_sword",
+    "path": "sprites/spr_basic_sword/spr_basic_sword.yy",
   },
   "spriteMaskId": null,
   "visible": true,

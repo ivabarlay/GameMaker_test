@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bow",
-    "path": "sprites/spr_bow/spr_bow.yy",
+    "name": "spr_basic_bow",
+    "path": "sprites/spr_basic_bow/spr_basic_bow.yy",
   },
   "spriteMaskId": null,
   "visible": true,
