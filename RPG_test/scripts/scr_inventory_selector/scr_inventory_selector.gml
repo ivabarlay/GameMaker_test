@@ -1,3 +1,9 @@
+#macro MENU_SELECT_ITEM 0
+#macro MENU_SELECT_OPTION 1
+#macro MENU_SELECT_NAME 2
+
+
+
 function drawHand(rotation, i){
 	draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 105 + op_space * i, 170, 1, 1, rotation, c_white, 1);	
 }
@@ -84,3 +90,4 @@ function scr_drawSpritesInventory(hasSelected){
 	}
 }	
 }
+

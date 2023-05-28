@@ -63,6 +63,7 @@
     {"id":{"name":"spr_marcos_right_primero","path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},},
     {"id":{"name":"scr_changePos","path":"scripts/scr_changePos/scr_changePos.yy",},},
     {"id":{"name":"obj_menu_game","path":"objects/obj_menu_game/obj_menu_game.yy",},},
+    {"id":{"name":"scr_init_item_equipped","path":"scripts/scr_init_item_equipped/scr_init_item_equipped.yy",},},
     {"id":{"name":"spr_menu_details","path":"sprites/spr_menu_details/spr_menu_details.yy",},},
     {"id":{"name":"spr_menu_inv","path":"sprites/spr_menu_inv/spr_menu_inv.yy",},},
     {"id":{"name":"obj_basic_sword","path":"objects/obj_basic_sword/obj_basic_sword.yy",},},
