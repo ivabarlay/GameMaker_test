@@ -18,5 +18,16 @@ for(var i = 0; i < 3; i++){
 }
 
 
-
+if(hasSelected = MENU_SELECT_NAME){
+	draw_sprite_stretched(sprite_index, bbox_bottom, 150, 96, 170, 144);
+	
+	for(var i = 0; i < 6; i++){
+		if(i < 3){
+			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * i, 120, 1.5, 1.5, 0, c_white, 1);
+		}
+		if(i >= 3){
+			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * (i-3), 150, 1.5, 1.5, 0, c_white, 1);
+		}
+	}
+}
 			   
