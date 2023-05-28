@@ -9,22 +9,25 @@ op_length = ds_list_size(inv);
 if(hasSelected == false){
 	scr_scroll_inventory();
 	scr_changePosInventory(obj_menu_inventory_selector);
-	show_debug_message(scrollPos)
+	if(accept_key){
+		hasSelected = true;
+	}
+	//show_debug_message(scrollPos)
 }
 
-if hasSelected == true {
+else if hasSelected == true {
 	scr_changePosOption(obj_menu_inventory_selector);
 	if(accept_key){
 		switch(posOption){
-			case 0: 
+			case EQUIP: 
 					break;
-			case 1: 
+			case DETAILS: 
 					break;
-			case 2: 
+			case RETURN: hasSelected = false;	
 					break;
 		}
 	}
-	show_debug_message(posOption)
+	//show_debug_message(posOption)
 }
 
 if(op_length > 0){
@@ -33,6 +36,4 @@ if(op_length > 0){
 	}
 }
 
-if(accept_key){
-	hasSelected = !hasSelected;
-}
+
