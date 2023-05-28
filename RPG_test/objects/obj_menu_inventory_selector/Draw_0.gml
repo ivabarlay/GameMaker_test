@@ -7,7 +7,7 @@ depth = -bbox_bottom;
 				
 draw_set_font(global.font_main);
 
-scr_drawHandPos(hasSelected);
+scr_drawSpritesInventory(hasSelected);
 
 for(var i = 0; i < 3; i++){
 	_c = c_black;

@@ -16,6 +16,24 @@ function Potion(): Item() constructor{
 		self.itemKind = itemType.POTION;
 }
 
+function Shield(name, level, defense, sprite): Armor() constructor{
+	self.name = name;
+	self.level = level;
+	self.defense = defense;
+	self.itemSprite = sprite;
+}
+
+function BasicShield(): Shield("Escudo basico", 1, 1, spr_basic_shield) constructor{}
+
+function Chest(name, level, defense, sprite): Armor() constructor{
+	self.name = name;
+	self.level = level;
+	self.defense = defense;
+	self.itemSprite = sprite;
+}
+
+function BasicChest(): Chest("Peto basico", 1, 1, spr_basic_chest) constructor{}
+
 function Helmet(name, level, defense, sprite): Armor() constructor{
 	self.name = name;
 	self.level = level;

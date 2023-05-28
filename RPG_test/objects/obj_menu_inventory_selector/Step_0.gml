@@ -19,9 +19,9 @@ else if hasSelected == true {
 	scr_changePosOption(obj_menu_inventory_selector);
 	if(accept_key){
 		switch(posOption){
-			case EQUIP: 
+			case EQUIP: //equip object
 					break;
-			case DETAILS: 
+			case DETAILS: //show details of object
 					break;
 			case RETURN: hasSelected = false;	
 					break;

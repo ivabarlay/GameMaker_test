@@ -1,5 +1,5 @@
 function drawHand(rotation, i){
-	draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 100 + op_space * i, 170, 1, 1, rotation, c_white, 1);	
+	draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 105 + op_space * i, 170, 1, 1, rotation, c_white, 1);	
 }
 
 function drawButton(sprite, i){
@@ -47,7 +47,7 @@ function scr_changePosOption(obj){
 
 }
 
-function scr_drawHandPos(hasSelected){
+function scr_drawSpritesInventory(hasSelected){
 	var rotation = 180;
 	var position = pos;
 	
