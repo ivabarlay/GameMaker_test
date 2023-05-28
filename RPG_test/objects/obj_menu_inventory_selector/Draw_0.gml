@@ -19,6 +19,8 @@ for(var i = 0; i < 3; i++){
 
 
 if(hasSelected = MENU_SELECT_NAME){
+	var position = posPlayerOption % 3;
+	
 	draw_sprite_stretched(sprite_index, bbox_bottom, 150, 96, 170, 144);
 	
 	for(var i = 0; i < 6; i++){
@@ -26,7 +28,15 @@ if(hasSelected = MENU_SELECT_NAME){
 			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * i, 120, 1.5, 1.5, 0, c_white, 1);
 		}
 		if(i >= 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * (i-3), 150, 1.5, 1.5, 0, c_white, 1);
+			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * (i-3), 180, 1.5, 1.5, 0, c_white, 1);
+		}
+		
+		if(posPlayerOption < 3){
+			draw_sprite_ext(spr_mano_inventory, bbox_bottom, 190 + 40 * position, 150, 1, 1, 180, c_white, 1);	
+		}
+		
+		if(posPlayerOption <= 5 && posPlayerOption >= 3){
+			draw_sprite_ext(spr_mano_inventory, bbox_bottom, 190 + 40 * position, 210, 1, 1, 180, c_white, 1);	
 		}
 	}
 }

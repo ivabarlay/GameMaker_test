@@ -53,6 +53,21 @@ function scr_changePosOption(obj){
 
 }
 
+function scr_changePosPlayerOption(obj){
+	if((global.selectedMenu == obj) && (hasSelected == MENU_SELECT_NAME)){
+		posPlayerOption += down_key - up_key; 
+		if(posPlayerOption < 3){
+			posPlayerOption += move_down_key*3;
+		}
+		if(posPlayerOption >= 3){
+			posPlayerOption -= move_up_key*3;
+		}
+	}
+	if posPlayerOption >= 6 {posPlayerOption = 5};
+	if posPlayerOption < 0 {posPlayerOption = 0};
+
+}
+
 function scr_drawSpritesInventory(hasSelected){
 	var rotation = 180;
 	var position = pos;

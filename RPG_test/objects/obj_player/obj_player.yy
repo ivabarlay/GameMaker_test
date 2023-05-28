@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder_do",
-    "path": "sprites/spr_placeholder_do/spr_placeholder_do.yy",
+    "name": "spr_placeholder_down",
+    "path": "sprites/spr_placeholder_down/spr_placeholder_down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -18,3 +18,16 @@ function scr_init_item_equipped(){
 		}
 	}
 }
+
+function scr_equip_item(player, category, obj){
+	var kind = noone;
+	switch(category){
+		case itemType.WEAPON: kind = WEAPON_EQUIPPED;
+							break;	
+							
+		case itemType.ARMOR: kind = ARMOR_EQUIPPED;
+							break;	
+	}
+	
+	global.itemsEquiped[? player][? kind] = obj;
+}

@@ -1,8 +1,13 @@
 up_key = keyboard_check_pressed(ord("A"));
 down_key = keyboard_check_pressed(ord("D"));
+move_up_key = keyboard_check_pressed(ord("W"));
+move_down_key = keyboard_check_pressed(ord("S"));
+
+
 accept_key = keyboard_check_pressed(vk_space);
 inv = global.inv[?selectedItemType];
 
+item = noone;
 
 op_length = ds_list_size(inv);
 
@@ -33,8 +38,16 @@ else if hasSelected == MENU_SELECT_OPTION {
 
 else if(hasSelected = MENU_SELECT_NAME){
 	if(accept_key){
+		item = inv[|pos];
 		hasSelected = MENU_SELECT_ITEM;	
+		scr_equip_item(posPlayerOption, selectedItemType, item);
+		show_debug_message(global.itemsEquiped[? posPlayerOption][? WEAPON_EQUIPPED])
+		show_debug_message(global.itemsEquiped[? posPlayerOption][? ARMOR_EQUIPPED])
+		//show_debug_message(inv[|pos])
 	}
+	
+	scr_changePosPlayerOption(obj_menu_inventory_selector);
+	show_debug_message(posPlayerOption)
 }
 
 if(op_length > 0){

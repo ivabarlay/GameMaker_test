@@ -93,7 +93,7 @@ function scr_pickUp(){
 		}
 	}
 	
-	r = 12;
+	r = 15;
 	var items_list = ds_list_create();
 
 	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && interact_key{
