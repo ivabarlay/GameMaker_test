@@ -13,13 +13,20 @@ function drawBoxes(i){
 
 function scr_scroll_inventory(){
 	if(global.selectedMenu == obj_menu_inventory_selector){
-		if(op_length) > 3 && scrollPos >= 0{
-			scrollPos += down_key - up_key; 
+		if(down_key && (pos % 3 == 2) && (pos + 1 < op_length)){
+			scrollPos++;
 		}
+		
+		if(up_key && (pos % 3 == 0)){
+			scrollPos--;
+		}
+		
+		if(scrollPos < 0){
+			scrollPos = 0;
+		}
+		
+		
 	}
-	if scrollPos > (op_length - 3) {scrollPos = op_length - 3}; 
-	if scrollPos < 0 || pos < 2 {scrollPos = 0};
-
 }
 
 function scr_changePosInventory(obj){
@@ -49,10 +56,14 @@ function scr_drawHandPos(hasSelected){
 		position = posOption;
 	}
 	
+	else{
+		position = pos % 3; 	
+	}
+	
 	if(op_length > 0){
 	for(var i = 0; i < 3; i++){
-		if(i < op_length){
-			draw_sprite_stretched(spritesInventory[i+scrollPos], -bbox_bottom, 90 + op_space*i, 110, 40, 40);	
+		if(i < op_length - scrollPos * 3){
+			draw_sprite_stretched(spritesInventory[|i + scrollPos * 3], -bbox_bottom, 90 + op_space*i, 110, 40, 40);
 		}
 	}
 	

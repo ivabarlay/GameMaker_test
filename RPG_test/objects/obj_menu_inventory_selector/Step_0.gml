@@ -9,7 +9,7 @@ op_length = ds_list_size(inv);
 if(hasSelected == false){
 	scr_scroll_inventory();
 	scr_changePosInventory(obj_menu_inventory_selector);
-	show_debug_message(pos)
+	show_debug_message(scrollPos)
 }
 
 if hasSelected == true {
@@ -29,7 +29,7 @@ if hasSelected == true {
 
 if(op_length > 0){
 	for(var i = 0; i < op_length; i++){
-		spritesInventory[i] = inv[|i].itemSprite;
+		spritesInventory[|i] = inv[|i].itemSprite;
 	}
 }
 

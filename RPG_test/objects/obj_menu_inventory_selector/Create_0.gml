@@ -9,7 +9,7 @@ hasSelected = false;
 
 selectedItemType = noone;
 
-spritesInventory = array_create(3);
+spritesInventory = ds_list_create();
 op_length = 0;
 
 global.selectedMenu = obj_menu_inventory_selector;
