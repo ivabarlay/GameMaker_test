@@ -2,6 +2,9 @@ up_key = keyboard_check_pressed(ord("A"));
 down_key = keyboard_check_pressed(ord("D"));
 accept_key = keyboard_check_pressed(vk_space);
 
+op_length = array_length(option);
+
+
 scr_changePos(obj_menu_inventory);
 
 if(accept_key) && global.selectedMenu == obj_menu_inventory{

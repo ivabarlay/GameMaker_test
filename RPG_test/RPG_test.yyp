@@ -80,6 +80,7 @@
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"spr_placeholder_do","path":"sprites/spr_placeholder_do/spr_placeholder_do.yy",},},
     {"id":{"name":"spr_basic_shield","path":"sprites/spr_basic_shield/spr_basic_shield.yy",},},
+    {"id":{"name":"spr_menu_player","path":"sprites/spr_menu_player/spr_menu_player.yy",},},
     {"id":{"name":"spr_gate","path":"sprites/spr_gate/spr_gate.yy",},},
     {"id":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
     {"id":{"name":"spr_xd","path":"sprites/spr_xd/spr_xd.yy",},},

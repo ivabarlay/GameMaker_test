@@ -40,4 +40,11 @@ if(hasSelected = MENU_SELECT_NAME){
 		}
 	}
 }
+
+//Borrar el objeto tras equiparlo
+
+if(hasEquipped){	
+	ds_list_delete(global.inv, global.inv[|pos]);
+	hasEquipped = false;
+}
 			   

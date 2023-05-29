@@ -7,6 +7,7 @@ posPlayerOption = 0;
 scrollPos = 0;
 inv = noone;
 hasSelected = false;
+hasEquipped = false;
 
 selectedItemType = noone;
 

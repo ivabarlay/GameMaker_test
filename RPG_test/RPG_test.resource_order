@@ -52,6 +52,7 @@
     {"name":"obj_question","order":2,"path":"objects/obj_question/obj_question.yy",},
     {"name":"obj_solid","order":3,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"spr_basic_shield","order":1,"path":"sprites/spr_basic_shield/spr_basic_shield.yy",},
+    {"name":"spr_menu_player","order":12,"path":"sprites/spr_menu_player/spr_menu_player.yy",},
     {"name":"spr_gate","order":12,"path":"sprites/spr_gate/spr_gate.yy",},
     {"name":"rm_combat_test","order":2,"path":"rooms/rm_combat_test/rm_combat_test.yy",},
     {"name":"spr_xd","order":8,"path":"sprites/spr_xd/spr_xd.yy",},
