@@ -44,7 +44,8 @@ if(hasSelected = MENU_SELECT_NAME){
 //Borrar el objeto tras equiparlo
 
 if(hasEquipped){	
-	ds_list_delete(global.inv, global.inv[|pos]);
+	ds_list_delete(global.inv[?selectedItemType], pos); //Creo que funciona
+	//show_debug_message(global.inv[? selectedItemType][|0])
 	hasEquipped = false;
 }
 			   
