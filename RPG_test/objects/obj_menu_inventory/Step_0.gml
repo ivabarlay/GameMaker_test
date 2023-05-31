@@ -17,6 +17,7 @@ if(accept_key) && global.selectedMenu == obj_menu_inventory{
 				break;
 		case 2:	
 				break;
+				
 	}	
 }
 

@@ -8,7 +8,6 @@ inv = global.inv[?selectedItemType];
 
 item = noone;
 
-op_length = ds_list_size(inv);
 
 if(hasSelected == MENU_SELECT_ITEM){
 	scr_scroll_inventory();
@@ -23,7 +22,10 @@ else if hasSelected == MENU_SELECT_OPTION {
 	scr_changePosOption(obj_menu_inventory_selector);
 	if(accept_key){
 		switch(posOption){
-						//equip object
+						//
+			case UNEQUIP: hasSelected = MENU_SELECT_UNEQUIP;
+					break;
+							//equip object
 			case EQUIP: hasSelected = MENU_SELECT_NAME;
 					break;
 			case DETAILS: //show details of object
@@ -40,14 +42,15 @@ else if(hasSelected = MENU_SELECT_NAME){
 		item = inv[|pos];
 		hasSelected = MENU_SELECT_ITEM;	
 		scr_equip_item(posPlayerOption, selectedItemType, item);
-		hasEquipped = true;
-		show_debug_message(global.itemsEquiped[? posPlayerOption][? WEAPON_EQUIPPED]);
-		show_debug_message(global.itemsEquiped[? posPlayerOption][? ARMOR_EQUIPPED]);
+		//show_debug_message(global.itemsEquiped[? posPlayerOption][? WEAPON_EQUIPPED]);
+		//show_debug_message(global.itemsEquiped[? posPlayerOption][? ARMOR_EQUIPPED]);
 	}
 	
 	scr_changePosPlayerOption(obj_menu_inventory_selector);
-	show_debug_message(posPlayerOption)
+	//show_debug_message(posPlayerOption)
 }
+
+op_length = ds_list_size(inv);
 
 if(op_length > 0){
 	for(var i = 0; i < op_length; i++){
