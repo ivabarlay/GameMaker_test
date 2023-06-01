@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "No usado",
-    "path": "folders/No usado.yy",
+    "name": "menuGame",
+    "path": "folders/menuGame.yy",
   },
   "parentObjectId": null,
   "persistent": false,

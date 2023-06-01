@@ -6,7 +6,7 @@ posOption = 0;
 posPlayerOption = 0;
 scrollPos = 0;
 inv = noone;
-hasSelected = false;
+hasSelected = 0;
 offset = 70;
 
 selectedItemType = noone;

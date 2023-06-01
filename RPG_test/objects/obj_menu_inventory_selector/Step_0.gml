@@ -15,6 +15,9 @@ if(hasSelected == MENU_SELECT_ITEM){
 	if(accept_key){
 		hasSelected = MENU_SELECT_OPTION;
 	}
+	if(move_down_key){
+		hasSelected = MENU_SELECT_UNEQUIP;	
+	}
 	//show_debug_message(scrollPos)
 }
 
@@ -22,9 +25,6 @@ else if hasSelected == MENU_SELECT_OPTION {
 	scr_changePosOption(obj_menu_inventory_selector);
 	if(accept_key){
 		switch(posOption){
-						//
-			case UNEQUIP: hasSelected = MENU_SELECT_UNEQUIP;
-					break;
 							//equip object
 			case EQUIP: hasSelected = MENU_SELECT_NAME;
 					break;
@@ -41,13 +41,22 @@ else if(hasSelected = MENU_SELECT_NAME){
 	if(accept_key){
 		item = inv[|pos];
 		hasSelected = MENU_SELECT_ITEM;	
-		scr_equip_item(posPlayerOption, selectedItemType, item);
+		scr_equip_item(pos, posPlayerOption, selectedItemType, item);
 		//show_debug_message(global.itemsEquiped[? posPlayerOption][? WEAPON_EQUIPPED]);
 		//show_debug_message(global.itemsEquiped[? posPlayerOption][? ARMOR_EQUIPPED]);
 	}
 	
 	scr_changePosPlayerOption(obj_menu_inventory_selector);
 	//show_debug_message(posPlayerOption)
+}
+
+else if(hasSelected == MENU_SELECT_UNEQUIP && global.selectedMenu == obj_menu_inventory_selector){
+	if(move_up_key || down_key){
+		hasSelected = MENU_SELECT_ITEM;	
+	}	
+	if(accept_key){
+		instance_create_depth(0, 0, -bbox_bottom, obj_menu_player);	
+	}
 }
 
 op_length = ds_list_size(inv);
@@ -58,4 +67,5 @@ if(op_length > 0){
 	}
 }
 
+depth = -1;		
 

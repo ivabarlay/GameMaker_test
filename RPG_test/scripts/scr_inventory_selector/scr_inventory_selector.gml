@@ -77,22 +77,15 @@ function scr_changePosPlayerOption(obj){
 
 function scr_drawSpritesInventory(hasSelected){
 	var rotation = 180;
-	var position = pos;
+	var position = undefined;
 	
-	if(hasSelected){
+	if(hasSelected == MENU_SELECT_OPTION){
 		rotation = 360;	
 		position = posOption;
 	}
 	
-	else{
+	else if(hasSelected == MENU_SELECT_ITEM){
 		position = pos % 3; 	
-	}
-	
-	if(op_length > 0){
-	for(var i = 0; i < 3; i++){
-		if(i < op_length - scrollPos * 3){
-			draw_sprite_stretched(spritesInventory[|i + scrollPos * 3], -bbox_bottom, 90 + offset + op_space*i, 110, 40, 40);
-		}
 	}
 	
 	if(position >= 0 && position <= 2){
@@ -107,7 +100,16 @@ function scr_drawSpritesInventory(hasSelected){
 					break;
 		}
 	}
-	else if (position > 2) {
+	
+	if(op_length > 0){
+	for(var i = 0; i < 3; i++){
+		if(i < op_length - scrollPos * 3){
+			draw_sprite_stretched(spritesInventory[|i + scrollPos * 3], -bbox_bottom, 90 + offset + op_space*i, 110, 40, 40);
+		}
+	}
+	
+	
+	if (position > 2) {
 		drawHand(rotation, 2);
 	}
 }	
@@ -116,22 +118,22 @@ function scr_drawSpritesInventory(hasSelected){
 function scr_draw_menu_players(){
 	var position = posPlayerOption % 3;
 	
-	draw_sprite_stretched(sprite_index, bbox_bottom, 150, 96, 170, 144);
+	draw_sprite_stretched(sprite_index, -bbox_bottom, 150, 96, 170, 144);
 	
 	for(var i = 0; i < 6; i++){
 		if(i < 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * i, 120, 1.5, 1.5, 0, c_white, 1);
+			draw_sprite_ext(obj_game.spritesPlayer[i], -bbox_bottom, 190 + 40 * i, 120, 1.5, 1.5, 0, c_white, 1);
 		}
 		if(i >= 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i], bbox_bottom, 190 + 40 * (i-3), 180, 1.5, 1.5, 0, c_white, 1);
+			draw_sprite_ext(obj_game.spritesPlayer[i], -bbox_bottom, 190 + 40 * (i-3), 180, 1.5, 1.5, 0, c_white, 1);
 		}
 		
 		if(posPlayerOption < 3){
-			draw_sprite_ext(spr_mano_inventory, bbox_bottom, 190 + 40 * position, 150, 1, 1, 180, c_white, 1);	
+			draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 190 + 40 * position, 150, 1, 1, 180, c_white, 1);	
 		}
 		
 		if(posPlayerOption <= 5 && posPlayerOption >= 3){
-			draw_sprite_ext(spr_mano_inventory, bbox_bottom, 190 + 40 * position, 210, 1, 1, 180, c_white, 1);	
+			draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 190 + 40 * position, 210, 1, 1, 180, c_white, 1);	
 		}
 	}
 }

@@ -19,20 +19,13 @@ function scr_init_item_equipped(){
 	}
 }
 
-function scr_equip_item(player, category, obj){
-	var kind = noone;
-	switch(category){
-		case itemType.WEAPON: kind = WEAPON_EQUIPPED;
-							break;	
-							
-		case itemType.ARMOR: kind = ARMOR_EQUIPPED;
-							break;	
-	}
+function scr_equip_item(pos, player, category, obj){
+	var kind = parseItemEnum(category);
 	if(global.itemsEquiped[? player][? kind] == undefined){
 		global.itemsEquiped[? player][? kind] = obj;
 		ds_list_delete(global.inv[?selectedItemType], pos);
 	}
-	else{
+	else if(global.inv[? pos][| pos] != undefined){
 		scr_unequip_item(player, category);
 		global.itemsEquiped[? player][? kind] = obj;
 		ds_list_delete(global.inv[?selectedItemType], pos);
@@ -41,14 +34,16 @@ function scr_equip_item(player, category, obj){
 }
 
 function scr_unequip_item(player, category){
-	var kind = noone;
-	switch(category){
-		case itemType.WEAPON: kind = WEAPON_EQUIPPED;
-							break;	
-							
-		case itemType.ARMOR: kind = ARMOR_EQUIPPED;
-							break;	
-	}
+	var kind = parseItemEnum(category);
+	
 	ds_list_add(global.inv[? selectedItemType], global.itemsEquiped[? player][? kind]);
-	global.itemsEquiped[? player][? kind] = noone;
+	global.itemsEquiped[? player][? kind] = undefined;
 }
+
+
+
+
+
+
+
+

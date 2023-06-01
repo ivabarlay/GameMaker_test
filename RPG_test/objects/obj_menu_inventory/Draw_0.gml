@@ -11,7 +11,7 @@ draw_sprite_ext(sprite_index, image_index, 75,
 				25, _width/sprite_width,
 				_height/sprite_height, 0, c_white, 1);
 				
-depth = -bbox_bottom;				
+depth = -1;				
 				
 draw_set_font(global.font_main);
 

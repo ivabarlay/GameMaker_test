@@ -5,6 +5,7 @@ pos = 0;
 posPlayerOption = 0;
 hasSelected = false;
 inv = noone;
+selectedItemType = obj_menu_inventory_selector.selectedItemType;
 
 spritesInventory = ds_list_create();
 op_length = 0;
