@@ -100,6 +100,7 @@ function scr_pickUp(){
 		itemPicked = items_list[|0];
 		if(itemPicked.pickUpable){
 			ds_list_add(global.inv[? chooseItemType()], itemPicked.item);
+			ds_list_add(global.roomItemsPicked, itemPicked);
 			instance_destroy(itemPicked);
 		}
 		ds_list_clear(items_list);

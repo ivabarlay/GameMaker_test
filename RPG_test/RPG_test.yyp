@@ -41,6 +41,7 @@
     {"id":{"name":"spr_menu_save","path":"sprites/spr_menu_save/spr_menu_save.yy",},},
     {"id":{"name":"spr_basic_sword","path":"sprites/spr_basic_sword/spr_basic_sword.yy",},},
     {"id":{"name":"spr_basic_bow","path":"sprites/spr_basic_bow/spr_basic_bow.yy",},},
+    {"id":{"name":"scr_utils","path":"scripts/scr_utils/scr_utils.yy",},},
     {"id":{"name":"obj_basic_bow","path":"objects/obj_basic_bow/obj_basic_bow.yy",},},
     {"id":{"name":"spr_menu_unequip","path":"sprites/spr_menu_unequip/spr_menu_unequip.yy",},},
     {"id":{"name":"obj_basic_dagger","path":"objects/obj_basic_dagger/obj_basic_dagger.yy",},},

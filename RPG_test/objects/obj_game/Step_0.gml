@@ -12,3 +12,9 @@ if(instance_exists(obj_player) && return_key){
 		ds_list_delete(global.menuPile, pos);
 	}
 }
+
+//Flag detector
+
+//if(ds_list_contains(global.roomItemsPicked, itemTest)){
+//	global.hasPickedItemTest = true;	
+//}
