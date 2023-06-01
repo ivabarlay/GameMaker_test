@@ -14,12 +14,12 @@ function drawButton(sprite, i){
 }
 
 function drawBoxes(i){
-	var _c = #171A2C;
+	var _c = #24006b;
 	draw_rectangle_color(80 + offset + op_space*i, 230, 125 + offset + op_space*i, 190, _c, _c, _c, _c, false);		
 }
 
 function drawButtonPlayer(){
-		var _c = #171A2C;
+		var _c = #24006b;
 		draw_rectangle_color(80, 130, 135, 190, _c, _c, _c, _c, false);		
 		draw_sprite_ext(spr_menu_unequip, bbox_bottom, 92, 145, 2, 2, 0, c_white, 1);
 }

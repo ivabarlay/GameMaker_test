@@ -20,6 +20,4 @@ global.itemsEquiped = ds_map_create();
 scr_init_item_equipped();
 
 //Flags
-
-global.flags[? hasPickedItemTest] = false;
-itemTest = noone;
+scr_init_flags();

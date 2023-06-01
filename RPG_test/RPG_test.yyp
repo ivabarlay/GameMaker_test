@@ -89,6 +89,7 @@
     {"id":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
     {"id":{"name":"spr_xd","path":"sprites/spr_xd/spr_xd.yy",},},
     {"id":{"name":"spr_basic_dagger","path":"sprites/spr_basic_dagger/spr_basic_dagger.yy",},},
+    {"id":{"name":"spr_flags","path":"scripts/spr_flags/spr_flags.yy",},},
     {"id":{"name":"spr_tile_cave","path":"sprites/spr_tile_cave/spr_tile_cave.yy",},},
     {"id":{"name":"p_unit","path":"objects/p_unit/p_unit.yy",},},
     {"id":{"name":"spr_placeholder_left","path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},},

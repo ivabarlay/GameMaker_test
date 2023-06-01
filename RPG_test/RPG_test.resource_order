@@ -61,6 +61,7 @@
     {"name":"rm_combat_test","order":2,"path":"rooms/rm_combat_test/rm_combat_test.yy",},
     {"name":"spr_xd","order":8,"path":"sprites/spr_xd/spr_xd.yy",},
     {"name":"spr_basic_dagger","order":3,"path":"sprites/spr_basic_dagger/spr_basic_dagger.yy",},
+    {"name":"spr_flags","order":7,"path":"scripts/spr_flags/spr_flags.yy",},
     {"name":"spr_tile_cave","order":1,"path":"sprites/spr_tile_cave/spr_tile_cave.yy",},
     {"name":"p_unit","order":3,"path":"objects/p_unit/p_unit.yy",},
     {"name":"spr_placeholder_left","order":5,"path":"sprites/spr_placeholder_left/spr_placeholder_left.yy",},

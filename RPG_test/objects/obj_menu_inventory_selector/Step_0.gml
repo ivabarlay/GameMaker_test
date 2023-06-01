@@ -9,11 +9,13 @@ inv = global.inv[?selectedItemType];
 item = noone;
 
 
-if(hasSelected == MENU_SELECT_ITEM) && !ds_list_empty(inv){
-	scr_scroll_inventory();
-	scr_changePosInventory(obj_menu_inventory_selector);
-	if(accept_key){
-		hasSelected = MENU_SELECT_OPTION;
+if(hasSelected == MENU_SELECT_ITEM){
+	if(!ds_list_empty(inv)){
+		scr_scroll_inventory();
+		scr_changePosInventory(obj_menu_inventory_selector);
+		if(accept_key){
+			hasSelected = MENU_SELECT_OPTION;
+		}
 	}
 	if(move_down_key){
 		hasSelected = MENU_SELECT_UNEQUIP;	
