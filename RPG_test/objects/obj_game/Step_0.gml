@@ -1,5 +1,6 @@
 pos = ds_list_size(global.menuPile) - 1;
 return_key = keyboard_check_pressed(vk_enter);
+interact_key = keyboard_check_pressed(ord("E"));
 
 if(instance_exists(obj_player) && return_key){
 	if(pos + 1 == 0){

@@ -25,5 +25,5 @@ if(hasSelected == MENU_SELECT_NAME){
 }
 
 else if(hasSelected == MENU_SELECT_UNEQUIP){
-	draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 80 + offset, 170, 1, 1, -90, c_white, 1);	
+	draw_sprite_ext(spr_mano_inventory, image_index, 80 + offset, 170, 1, 1, -90, c_white, 1);	
 }

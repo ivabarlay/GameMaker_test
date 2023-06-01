@@ -11,6 +11,7 @@ if(accept_key) && global.selectedMenu == obj_question{
 				break;
 				
 		case 1:global.selectedMenu = DEFAULT;
+				ds_list_delete(global.menuPile, ds_list_size(global.menuPile) - 1) ;
 				instance_destroy(obj_question);
 				break;
 		

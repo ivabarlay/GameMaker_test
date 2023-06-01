@@ -1,0 +1,2 @@
+dialogue = "eeey";
+name = "Mongolo"

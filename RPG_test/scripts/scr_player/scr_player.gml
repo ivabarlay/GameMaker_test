@@ -77,29 +77,21 @@ function scr_menuGame(){
 
 
 
-	if(instance_exists(obj_menu_game)){
+	if(instance_exists(obj_menu_game) || instance_exists(obj_npc_dialogue)){
 		xspd = 0;
 		yspd = 0;
 		}	
 }
 
 function scr_pickUp(){
-	
-	function chooseItemType(){
-		switch(itemPicked.item.itemKind){
-			case itemType.WEAPON: return WEAPON_POS;
-			case itemType.ARMOR: return ARMOR_POS;
-			//case itemType.POTION: return obj.weapon;
-		}
-	}
-	
 	r = 15;
 	var items_list = ds_list_create();
 
-	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0 && interact_key{
+	if (collision_circle_list(x, y, r, obj_item, false, false, items_list, true)) != 0
+	&& interact_key{
 		itemPicked = items_list[|0];
 		if(itemPicked.pickUpable){
-			ds_list_add(global.inv[? chooseItemType()], itemPicked.item);
+			ds_list_add(global.inv[? parseItemEnum(itemPicked.item.itemKind)], itemPicked.item);
 			ds_list_add(global.roomItemsPicked, itemPicked);
 			instance_destroy(itemPicked);
 		}
@@ -107,3 +99,32 @@ function scr_pickUp(){
 	}
 	
 }
+
+function scr_interact_npc(){
+	var r = 15;
+	var npc_list = ds_list_create();
+	
+	if ((collision_circle_list(x, y, r, obj_npc, false, false, npc_list, true)) != 0 
+	&& interact_key && !instance_exists(obj_npc_dialogue)){
+		var npcInteracted = npc_list[|0];
+		instance_create_depth(150, 170, -1, obj_npc_dialogue);
+		obj_npc_dialogue.dialogue = npcInteracted.dialogue;
+		obj_npc_dialogue.name = npcInteracted.name;
+		
+		ds_list_add(global.menuPile, obj_npc_dialogue);
+		ds_list_clear(npc_list);
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+

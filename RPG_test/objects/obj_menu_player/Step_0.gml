@@ -8,7 +8,7 @@ itemPos = parseItemEnum(selectedItemType)
 
 scr_changePosPlayerOption(obj_menu_player);
 
-depth = -2;
+depth = -3;
 
 if(accept_key && hasSelected == false){
 	hasSelected = true;	

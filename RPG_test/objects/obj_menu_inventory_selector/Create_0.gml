@@ -18,7 +18,6 @@ global.selectedMenu = obj_menu_inventory_selector;
 ds_list_add(global.menuPile, obj_menu_inventory_selector);
 
 
-#macro UNEQUIP -1
 #macro EQUIP 0
 #macro DETAILS 1
 #macro RETURN 2
