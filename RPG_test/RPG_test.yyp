@@ -109,6 +109,7 @@
     {"id":{"name":"obj_basic_chest","path":"objects/obj_basic_chest/obj_basic_chest.yy",},},
     {"id":{"name":"scr_item_enum","path":"scripts/scr_item_enum/scr_item_enum.yy",},},
     {"id":{"name":"spr_marcos_up","path":"sprites/spr_marcos_up/spr_marcos_up.yy",},},
+    {"id":{"name":"obj_npc_basic25","path":"objects/obj_npc_basic25/obj_npc_basic25.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},},

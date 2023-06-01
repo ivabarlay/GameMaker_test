@@ -80,6 +80,7 @@
     {"name":"obj_basic_chest","order":6,"path":"objects/obj_basic_chest/obj_basic_chest.yy",},
     {"name":"scr_item_enum","order":4,"path":"scripts/scr_item_enum/scr_item_enum.yy",},
     {"name":"spr_marcos_up","order":4,"path":"sprites/spr_marcos_up/spr_marcos_up.yy",},
+    {"name":"obj_npc_basic25","order":4,"path":"objects/obj_npc_basic25/obj_npc_basic25.yy",},
     {"name":"obj_title","order":3,"path":"objects/obj_title/obj_title.yy",},
     {"name":"spr_solid","order":11,"path":"sprites/spr_solid/spr_solid.yy",},
     {"name":"spr_menu_potion","order":8,"path":"sprites/spr_menu_potion/spr_menu_potion.yy",},
