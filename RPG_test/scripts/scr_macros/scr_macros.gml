@@ -6,3 +6,5 @@
 #macro SAVE 1
 #macro TITLE 2
 #macro DEFAULT obj_menu_game
+
+#macro hasPickedItemTest 0

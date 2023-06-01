@@ -28,7 +28,18 @@ function clearGlobalVariables(){
 			global.itemsEquiped[? i][? j] = noone;
 		}
 	}
+	
+	for(var i = 0; i < ds_map_size(global.flags); i++){
+		global.flags[? i] = false;		
+	}
+	
+	
 	room_goto(rm_title);	
-	
-	
 }
+
+
+
+
+
+
+

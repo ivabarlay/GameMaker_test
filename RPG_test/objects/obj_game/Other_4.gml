@@ -5,7 +5,7 @@ if(self.startPlayerPosition != noone){
 
 ds_list_clear(global.roomItemsPicked);
 
-//if(global.hasPickedItemTest == false){
-//	itemTest = instance_create_depth(150, 150, -3, obj_basic_bow);
-//}
+if(global.flags[? hasPickedItemTest] == false && (room == rm_start)){
+	itemTest = instance_create_depth(150, 150, -3, obj_basic_bow);
+}
 

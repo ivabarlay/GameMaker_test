@@ -15,6 +15,6 @@ if(instance_exists(obj_player) && return_key){
 
 //Flag detector
 
-//if(ds_list_contains(global.roomItemsPicked, itemTest)){
-//	global.hasPickedItemTest = true;	
-//}
+if(ds_list_contains(global.roomItemsPicked, itemTest)){
+	global.flags[? hasPickedItemTest] = true;	
+}

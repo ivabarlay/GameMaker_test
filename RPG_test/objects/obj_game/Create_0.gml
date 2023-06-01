@@ -2,6 +2,7 @@ startPlayerPosition = noone;
 global.selectedMenu = obj_menu_game;
 global.menuPile = ds_list_create();
 global.roomItemsPicked = ds_list_create();
+global.flags = ds_map_create();
 
 for(var i = 0; i < 6; i++) {
 	spritesPlayer[i] = spr_placeholder_down;
@@ -20,5 +21,5 @@ scr_init_item_equipped();
 
 //Flags
 
-//global.hasPickedItemTest = false;
-//itemTest = noone;
+global.flags[? hasPickedItemTest] = false;
+itemTest = noone;
