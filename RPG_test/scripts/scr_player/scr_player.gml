@@ -109,7 +109,6 @@ function scr_interact_npc(){
 		var npcInteracted = npc_list[|0];
 		instance_create_depth(150, 170, -1, obj_npc_dialogue);
 		ds_list_add(global.menuPile, obj_npc_dialogue);
-		obj_npc_dialogue.dialogue = npcInteracted.dialogue;
 		obj_npc_dialogue.name = npcInteracted.name;
 		obj_npc_dialogue.messages = npcInteracted.messages;
 		obj_npc_dialogue.message_length = string_length(npcInteracted.messages[0]);
