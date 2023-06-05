@@ -19,6 +19,7 @@ if(accept_key) && global.selectedMenu == obj_question{
 }
 
 function clearGlobalVariables(){
+	ds_list_clear(global.unitsInstances);
 	for(var i = 0; i < 3; i++){
 		ds_list_clear(global.inv[? i]);
 	}
