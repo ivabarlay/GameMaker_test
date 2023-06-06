@@ -1,8 +1,8 @@
 var instance1 = global.unitsInstances[|0];
 var instance2 = global.unitsInstances[|1];
+accept_key = keyboard_check_pressed(vk_space);
 
-if(keyboard_check_pressed(vk_space)){
-	switch(combatPhase){
+switch(combatPhase){
 		case phase.init:
 			combatPhase = phase.startTurn;		
 	
@@ -12,14 +12,16 @@ if(keyboard_check_pressed(vk_space)){
 			combatPhase = phase.chooseAction;
 			
 		break;
-	
+		
 		case phase.chooseAction:
-			combatPhase = phase.process;
-			if(global.unitsInstances[|turnSelector].unitStats.isAlly == true){
-				scr = obj_combat_unit.attackUnit;
-			}
-			else{
-				scr = obj_combat_unit.damageUnit;	
+			if(accept_key){
+				combatPhase = phase.process;
+				if(global.unitsInstances[|turnSelector].unitStats.isAlly == true){
+					scr = obj_combat_unit.attackUnit;
+				}
+				else{
+					scr = obj_combat_unit.damageUnit;	
+				}
 			}
 			
 		break;
@@ -31,8 +33,9 @@ if(keyboard_check_pressed(vk_space)){
 			
 			show_debug_message(instance2.unitStats)
 			show_debug_message(instance1.unitStats)
-			//instance1.attackUnit(instance2)
+			
 			method_call(scr, [instance1, instance2]);
+			
 			show_debug_message(instance2.unitStats)
 			show_debug_message(instance1.unitStats)
 
@@ -54,8 +57,6 @@ if(keyboard_check_pressed(vk_space)){
 			game_end();
 		break;
 	
-	}
 }
-
 
 

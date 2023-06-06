@@ -29,11 +29,12 @@ if accept_key{
 			case 2:	game_end()
 				break;
 		}	
+		break;
 		//settings menu
 		case 1:
 		switch(pos){
 			//window size
-			case 0: 		
+			case 0: menu_level = 2;	
 				break;				
 			//controls		
 			case 1:	
@@ -42,8 +43,38 @@ if accept_key{
 			case 2:	menu_level = 0;
 				break;
 		}	
+		break;	
+		//window size menu
+		
+		case 2:
+		switch(pos){
+			//640 480
+			case 0:
+				windowWidth = 640;
+				windowHeight = 480;
+				break;				
+			//1280 720	
+			case 1:
+				windowWidth = 1280;
+				windowHeight = 720;
+				break;				
+			//1680 1050
+			case 2:	
+				windowWidth = 1680;
+				windowHeight = 1050;
+				break;
+			//Back
+			case 3:
+				menu_level = 1;
+				break;
+		}
+		break;
 	}
 	if _sml != menu_level {pos = 0};
 	//store number of options in menu
 	op_length = array_length(option[menu_level])
+	
+	window_set_size(windowWidth, windowHeight);
+	window_set_position(display_get_width()/2 -windowWidth/2,
+	display_get_height()/2 -windowHeight/2);
 }

@@ -1,2 +1,4 @@
-global.font_main = font_title;
+pixelFont = font_add("ARCADECLASSIC.TTF", 40, false, false, 32, 128);
+
+global.font_main = pixelFont;
 
