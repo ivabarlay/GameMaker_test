@@ -11,3 +11,8 @@ instance2.unitStats.damage = 10;
 instance2.unitStats.name = "Instancia2";
 instance2.unitStats.hp = 50;
 
+
+global.playerSkills[? 0][| 0] = ice_spell;
+
+	
+	

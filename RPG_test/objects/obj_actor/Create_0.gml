@@ -1,4 +1,6 @@
-op_space = 20;
+op_space = 50;
 op_border = 20;
 
-option[0] = "Attack";
+optionsKeys = parseOptionsToString(ds_map_keys_to_array(global.options));
+
+

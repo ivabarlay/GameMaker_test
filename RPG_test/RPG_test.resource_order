@@ -42,6 +42,7 @@
     {"name":"spr_marcos_stood","order":3,"path":"sprites/spr_marcos_stood/spr_marcos_stood.yy",},
     {"name":"spr_basic_helmet","order":5,"path":"sprites/spr_basic_helmet/spr_basic_helmet.yy",},
     {"name":"spr_combat_unit","order":1,"path":"sprites/spr_combat_unit/spr_combat_unit.yy",},
+    {"name":"scr_combat_system","order":6,"path":"scripts/scr_combat_system/scr_combat_system.yy",},
     {"name":"spr_placeholder_u","order":2,"path":"sprites/spr_placeholder_u/spr_placeholder_u.yy",},
     {"name":"spr_marcos_right_primero","order":2,"path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},
     {"name":"scr_changePos","order":5,"path":"scripts/scr_changePos/scr_changePos.yy",},
@@ -90,5 +91,6 @@
     {"name":"scr_item_struct","order":1,"path":"scripts/scr_item_struct/scr_item_struct.yy",},
     {"name":"rm_inst","order":2,"path":"rooms/rm_inst/rm_inst.yy",},
     {"name":"obj_menu_inventory","order":3,"path":"objects/obj_menu_inventory/obj_menu_inventory.yy",},
+    {"name":"scr_combat_skills","order":7,"path":"scripts/scr_combat_skills/scr_combat_skills.yy",},
   ],
 }

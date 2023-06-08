@@ -20,8 +20,30 @@ draw_text_transformed(300, 150, obj_combat_manager.combatPhase, 1/2, 1/2, 0)
 
 draw_sprite_ext(sprite_index, image_index, x, y, 10, 20, 0, c_white, 1)
 
-for(var i = 0; i < array_length(option); i++){
-	var _c = c_white;
-	draw_text_transformed_color(x + op_border, y + op_border + op_space*i, option[i],
-		0.8, 0.8, 0, _c, _c, _c, _c, 1);	
+switch(obj_combat_manager.menu_level){
+	case 0: for(var i = 0; i < array_length(optionsKeys); i++){
+			var _c = c_white;
+			if obj_combat_manager.posOption == i {
+				_c = c_yellow;
+			}
+			draw_text_transformed_color(x + op_border, y + op_border + op_space*i, optionsKeys[i],
+				0.8, 0.8, 0, _c, _c, _c, _c, 1);	
+		}
+		break;
+		
+	case 1:	for(var i = 0; i < array_length(optionsKeys); i++){
+			var _c = c_white;
+			if obj_combat_manager.posOption == i {
+				_c = c_yellow;
+			}
+			draw_text_transformed_color(x + op_border, y + op_border + op_space*i,
+			script_get_name(global.playerSkills[? 0][| 0]), 0.8, 0.8, 0, _c, _c, _c, _c, 1);	
+		}
+			break;
 }
+
+
+
+
+
+

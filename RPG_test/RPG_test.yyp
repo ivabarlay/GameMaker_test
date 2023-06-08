@@ -70,6 +70,7 @@
     {"id":{"name":"tile_cave","path":"tilesets/tile_cave/tile_cave.yy",},},
     {"id":{"name":"spr_basic_helmet","path":"sprites/spr_basic_helmet/spr_basic_helmet.yy",},},
     {"id":{"name":"spr_combat_unit","path":"sprites/spr_combat_unit/spr_combat_unit.yy",},},
+    {"id":{"name":"scr_combat_system","path":"scripts/scr_combat_system/scr_combat_system.yy",},},
     {"id":{"name":"spr_placeholder_u","path":"sprites/spr_placeholder_u/spr_placeholder_u.yy",},},
     {"id":{"name":"spr_marcos_right_primero","path":"sprites/spr_marcos_right_primero/spr_marcos_right_primero.yy",},},
     {"id":{"name":"scr_changePos","path":"scripts/scr_changePos/scr_changePos.yy",},},
@@ -124,6 +125,7 @@
     {"id":{"name":"scr_item_struct","path":"scripts/scr_item_struct/scr_item_struct.yy",},},
     {"id":{"name":"rm_inst","path":"rooms/rm_inst/rm_inst.yy",},},
     {"id":{"name":"obj_menu_inventory","path":"objects/obj_menu_inventory/obj_menu_inventory.yy",},},
+    {"id":{"name":"scr_combat_skills","path":"scripts/scr_combat_skills/scr_combat_skills.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
   ],
   "RoomOrderNodes": [

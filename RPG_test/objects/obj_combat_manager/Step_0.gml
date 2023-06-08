@@ -1,6 +1,14 @@
 var instance1 = global.unitsInstances[|0];
 var instance2 = global.unitsInstances[|1];
+
+var unitSelecting = global.unitsInstances[|turnSelector];
+var _sml = menu_level;
+
+down_key = keyboard_check_pressed(ord("S"));
+up_key = keyboard_check_pressed(ord("W"));
 accept_key = keyboard_check_pressed(vk_space);
+
+
 
 switch(combatPhase){
 		case phase.init:
@@ -14,16 +22,50 @@ switch(combatPhase){
 		break;
 		
 		case phase.chooseAction:
+			switch(menu_level){
+				case 0: op_length = ds_map_size(global.options)
+						break;
+						
+				case 1: op_length = ds_list_size(global.playerSkills[? 0]);
+						break;
+			}
+			
+			scr_change_pos_option();
+			show_debug_message(posOption)
+			
 			if(accept_key){
-				combatPhase = phase.process;
-				if(global.unitsInstances[|turnSelector].unitStats.isAlly == true){
-					scr = obj_combat_unit.attackUnit;
-				}
-				else{
-					scr = obj_combat_unit.damageUnit;	
+				switch(menu_level){
+					case 0: switch(global.options[? posOption]){
+						
+						case menuOptions.attack: combatPhase = phase.chooseUnit;
+												 scr = obj_combat_unit.attackUnit;
+												break;
+											
+						case menuOptions.skills: menu_level = 1;
+												break;
+					}
+					break;
+					
+					case 1: scr = global.playerSkills[? 0][| posOption];
+							combatPhase = phase.chooseUnit;
+							break;
 				}
 			}
 			
+		break;
+		
+		case phase.chooseUnit:
+			scr_change_pos_unit();
+			show_debug_message(posUnit)
+			if(accept_key){
+				combatPhase = phase.process;
+				if(unitSelecting.unitStats.isAlly == true){
+					selectedUnit = global.unitsInstances[|posUnit];
+				}
+				else{
+					selectedUnit = global.unitsInstances[|irandom(0)];	
+				}
+			}
 		break;
 	
 		case phase.process:
@@ -31,13 +73,7 @@ switch(combatPhase){
 			turnSelector++;
 			turnSelector = turnSelector % 2;
 			
-			show_debug_message(instance2.unitStats)
-			show_debug_message(instance1.unitStats)
-			
-			method_call(scr, [instance1, instance2]);
-			
-			show_debug_message(instance2.unitStats)
-			show_debug_message(instance1.unitStats)
+			method_call(scr, [unitSelecting, selectedUnit]);
 
 		break;
 	
@@ -45,8 +81,13 @@ switch(combatPhase){
 		case phase.endTurn:
 			combatPhase = phase.startTurn;
 			
-			if(instance1.unitStats.hp <= 0){combatPhase = phase.lose;}
-			if(instance2.unitStats.hp <= 0){combatPhase = phase.win;}
+			if(instance1.unitStats.hp <= 0){
+				combatPhase = phase.lose;
+			}
+			
+			else if(instance2.unitStats.hp <= 0){
+				combatPhase = phase.win;
+			}
 		break;
 	
 		case phase.win:
@@ -58,5 +99,17 @@ switch(combatPhase){
 		break;
 	
 }
+
+if _sml != menu_level {posOption = 0};
+
+
+
+
+
+
+
+
+
+
 
 

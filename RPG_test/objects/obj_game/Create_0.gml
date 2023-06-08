@@ -29,8 +29,7 @@ scr_init_flags();
 global.playerSkills = ds_map_create();
 for(var i = 0; i < 6; i++){
 	for(var j = 0; j < 6; j++){
-		global.playerSkills[? i] = array_create(6);
-		global.playerSkills[? i][j] = undefined;
+		global.playerSkills[? i] = ds_list_create();
 	}
 }
 
