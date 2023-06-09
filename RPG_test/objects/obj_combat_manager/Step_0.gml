@@ -1,8 +1,11 @@
 var instance1 = global.unitsInstances[|0];
 var instance2 = global.unitsInstances[|1];
 
-var unitSelecting = global.unitsInstances[|turnSelector];
+unitSelecting = global.unitsInstances[|turnSelector];
+whichPlayerIsSelecting = unitSelecting.unitStats.player;
+
 var _sml = menu_level;
+
 
 down_key = keyboard_check_pressed(ord("S"));
 up_key = keyboard_check_pressed(ord("W"));
@@ -34,21 +37,27 @@ switch(combatPhase){
 			show_debug_message(posOption)
 			
 			if(accept_key){
-				switch(menu_level){
-					case 0: switch(global.options[? posOption]){
+				if(unitSelecting.unitStats.isAlly == true){
+					switch(menu_level){
+						case 0: switch(global.options[? posOption]){
 						
-						case menuOptions.attack: combatPhase = phase.chooseUnit;
-												 scr = obj_combat_unit.attackUnit;
-												break;
+							case menuOptions.attack: combatPhase = phase.chooseUnit;
+													 scr = obj_combat_unit.attackUnit;
+													break;
 											
-						case menuOptions.skills: menu_level = 1;
-												break;
-					}
-					break;
+							case menuOptions.skills: menu_level = 1;
+													break;
+						}
+						break;
 					
-					case 1: scr = global.playerSkills[? 0][| posOption];
-							combatPhase = phase.chooseUnit;
-							break;
+						case 1: scr = global.playerSkills[? whichPlayerIsSelecting][| posOption];
+								combatPhase = phase.chooseUnit;
+								break;
+					}
+				}
+				else{
+					combatPhase = phase.chooseUnit;
+					scr = obj_combat_unit.attackUnit;
 				}
 			}
 			
@@ -69,6 +78,7 @@ switch(combatPhase){
 		break;
 	
 		case phase.process:
+			menu_level = 0;
 			combatPhase = phase.endTurn;
 			turnSelector++;
 			turnSelector = turnSelector % 2;
@@ -76,8 +86,7 @@ switch(combatPhase){
 			method_call(scr, [unitSelecting, selectedUnit]);
 
 		break;
-	
-	
+		
 		case phase.endTurn:
 			combatPhase = phase.startTurn;
 			

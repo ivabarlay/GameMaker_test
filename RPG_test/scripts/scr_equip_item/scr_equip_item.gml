@@ -1,15 +1,16 @@
 // Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_init_item_equipped(){
-	#macro MARCO 0 
-	#macro DANIEL 1 
-	#macro JOSE 2 
-	#macro IVAN 3 
-	#macro PACHECO 4 
-	#macro PAREJA 5 
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more 
+#macro MARCOS 0 
+#macro DANIEL 1 
+#macro JOSE 2 
+#macro IVAN 3 
+#macro PACHECO 4 
+#macro PAREJA 5 
+#macro WEAPON_EQUIPPED 0
+#macro ARMOR_EQUIPPED 1
 
-	#macro WEAPON_EQUIPPED 0
-	#macro ARMOR_EQUIPPED 1
+function scr_init_item_equipped(){
+	
 
 	for(var i = 0; i < 6; i++){
 		for(var j = 0; j < 2; j++){
