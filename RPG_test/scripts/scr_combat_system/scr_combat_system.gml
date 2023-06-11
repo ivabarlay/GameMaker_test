@@ -35,11 +35,22 @@ function scr_change_pos_option(){
 }
 
 function scr_change_pos_unit(){
-	var op_length = ds_list_size(global.unitsInstances)
+	var op_length = ds_list_size(global.enemyInstances);
+	show_debug_message(op_length)
 	posUnit += down_key - up_key; 
 	if posUnit >= op_length {posUnit = 0};
 	else if posUnit < 0 {posUnit = op_length - 1};	
-	if global.unitsInstances[| posUnit].unitStats.isAlly{posUnit += 1}
+	
 	
 }
 
+function scr_check_hp_units(){
+	for(var i = 0;  i < ds_list_size(global.unitsInstances); i++){
+		if(global.unitsInstances[| i].unitStats.hp <= 0){
+			show_debug_message(global.unitsInstances[| i])
+			instance_destroy(global.unitsInstances[| i]);
+	//		show_debug_message(global.unitsInstances[| i])
+			
+		}
+	}
+}

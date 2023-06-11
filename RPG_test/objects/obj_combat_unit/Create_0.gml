@@ -15,7 +15,7 @@ unitStats = new initStats(x, y);
 
 
 function attackUnit(unitAttacking, unitDamaged){
-		unitDamaged.unitStats.hp -= unitAttacking.unitStats.damage;	
+	unitDamaged.unitStats.hp = unitDamaged.unitStats.hp - unitAttacking.unitStats.damage;	
 }
 
 function damageUnit(unitDamaged, unitAttacking){

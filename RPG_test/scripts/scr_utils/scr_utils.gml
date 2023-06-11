@@ -9,3 +9,11 @@ function array_max_string_width(array){
 	}
 	return res;
 }
+
+function ds_list_delete_element(id, element){
+	for(var i = 0; i < ds_list_size(id); i++){
+		if(id[| i] == element){
+			ds_list_delete(id, i);	
+		}
+	}
+}

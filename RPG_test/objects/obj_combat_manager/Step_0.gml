@@ -1,8 +1,6 @@
-var instance1 = global.unitsInstances[|0];
-var instance2 = global.unitsInstances[|1];
-
 unitSelecting = global.unitsInstances[|turnSelector];
 whichPlayerIsSelecting = unitSelecting.unitStats.player;
+
 
 var _sml = menu_level;
 
@@ -10,7 +8,7 @@ var _sml = menu_level;
 down_key = keyboard_check_pressed(ord("S"));
 up_key = keyboard_check_pressed(ord("W"));
 accept_key = keyboard_check_pressed(vk_space);
-
+return_key = keyboard_check_pressed(vk_enter);
 
 
 switch(combatPhase){
@@ -26,15 +24,15 @@ switch(combatPhase){
 		
 		case phase.chooseAction:
 			switch(menu_level){
-				case 0: op_length = ds_map_size(global.options)
+				case 0: op_length = ds_map_size(global.options);
 						break;
 						
-				case 1: op_length = ds_list_size(global.playerSkills[? 0]);
+				case 1: op_length = ds_list_size(global.playerSkills[? whichPlayerIsSelecting]);
 						break;
 			}
 			
 			scr_change_pos_option();
-			show_debug_message(posOption)
+		//	show_debug_message(unitSelecting)
 			
 			if(accept_key){
 				if(unitSelecting.unitStats.isAlly == true){
@@ -60,43 +58,55 @@ switch(combatPhase){
 					scr = obj_combat_unit.attackUnit;
 				}
 			}
-			
+			else if(return_key && (menu_level == 1)){
+				menu_level = 0;
+			}
+		posUnit = 0;
+		
 		break;
 		
 		case phase.chooseUnit:
 			scr_change_pos_unit();
-			show_debug_message(posUnit)
 			if(accept_key){
 				combatPhase = phase.process;
 				if(unitSelecting.unitStats.isAlly == true){
-					selectedUnit = global.unitsInstances[|posUnit];
+					selectedUnit = global.enemyInstances[|posUnit];
 				}
 				else{
-					selectedUnit = global.unitsInstances[|irandom(0)];	
+					selectedUnit = global.allyInstances[|random(ds_list_size(global.allyInstances)-1)];
 				}
 			}
+			else if(return_key){
+				combatPhase = phase.chooseAction;	
+			}
+			//show_debug_message(selectedUnit)
 		break;
 	
 		case phase.process:
 			menu_level = 0;
 			combatPhase = phase.endTurn;
-			turnSelector++;
-			turnSelector = turnSelector % 2;
+			
 			
 			method_call(scr, [unitSelecting, selectedUnit]);
+			scr_check_hp_units();
+			turnSelector++;
+			turnSelector = turnSelector % ds_list_size(global.unitsInstances);
 
 		break;
 		
-		case phase.endTurn:
-			combatPhase = phase.startTurn;
-			
-			if(instance1.unitStats.hp <= 0){
-				combatPhase = phase.lose;
+		case phase.endTurn: 
+			if(ds_list_empty(global.enemyInstances)){
+				combatPhase = phase.win;	
+			}
+			else if (ds_list_empty(global.allyInstances)){
+				combatPhase = phase.lose;	
+			}
+			else{
+				combatPhase = phase.startTurn;
+				
+			//	show_debug_message(ds_list_size(global.unitsInstances))
 			}
 			
-			else if(instance2.unitStats.hp <= 0){
-				combatPhase = phase.win;
-			}
 		break;
 	
 		case phase.win:
@@ -110,7 +120,6 @@ switch(combatPhase){
 }
 
 if _sml != menu_level {posOption = 0};
-
 
 
 
