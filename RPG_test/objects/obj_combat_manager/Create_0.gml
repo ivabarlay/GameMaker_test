@@ -12,15 +12,18 @@ enum phase {
 enum menuOptions{
 	attack,
 	skills,
+	item,
 }
 
 #macro ATTACK 0
 #macro SKILLS 1
+#macro ITEM 2
 
 global.options = ds_map_create();
 
 global.options[? ATTACK] = menuOptions.attack;
 global.options[? SKILLS] = menuOptions.skills;
+global.options[? ITEM] = menuOptions.item;
 
 combatPhase = phase.init;
 turnOrder = array_create(2);

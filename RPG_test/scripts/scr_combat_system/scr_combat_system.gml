@@ -7,22 +7,21 @@ function parseOptionsToString(options){
 					
 			case 1: res[1] = "Magia";
 					break;	
+					
+			case 2: res[2] = "Item";
+					break;	
 		}
 	}
 	return res;
 	
 }
 
-function parseSkillsToString(skill){
-	res = array_create(array_length(skills));
-	for(var i = 0; i < array_length(skills); i++){
-		switch(options[i]){
-			case 0: res[0] = "Atacar";
-					break;	
-					
-			case 1: res[1] = "Magia";
-					break;	
-		}
+function parseSkillsToString(skills){
+	res = ds_list_create();
+	for(var i = 0; i < ds_list_size(skills); i++){
+		var skill_string = script_get_name(skills[| i]);
+		skill_string = string_replace_all(skill_string, "_", " ");
+		res[| i] = skill_string;
 	}
 	return res;
 	
@@ -47,9 +46,7 @@ function scr_change_pos_unit(){
 function scr_check_hp_units(){
 	for(var i = 0;  i < ds_list_size(global.unitsInstances); i++){
 		if(global.unitsInstances[| i].unitStats.hp <= 0){
-			show_debug_message(global.unitsInstances[| i])
 			instance_destroy(global.unitsInstances[| i]);
-	//		show_debug_message(global.unitsInstances[| i])
 			
 		}
 	}

@@ -10,10 +10,15 @@ function array_max_string_width(array){
 	return res;
 }
 
-function ds_list_delete_element(id, element){
+function ds_list_max_string_width(id){
+	res = 0;
 	for(var i = 0; i < ds_list_size(id); i++){
-		if(id[| i] == element){
-			ds_list_delete(id, i);	
-		}
+		res = max(res, string_width(id[| i]))	
 	}
+	return res;
+}
+
+function ds_list_delete_element(id, element){
+	var index = ds_list_find_index(id, element);
+	ds_list_delete(id, index);
 }

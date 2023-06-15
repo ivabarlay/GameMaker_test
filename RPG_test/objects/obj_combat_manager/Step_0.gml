@@ -73,7 +73,7 @@ switch(combatPhase){
 					selectedUnit = global.enemyInstances[|posUnit];
 				}
 				else{
-					selectedUnit = global.allyInstances[|random(ds_list_size(global.allyInstances)-1)];
+					selectedUnit = global.allyInstances[| irandom(ds_list_size(global.allyInstances)-1)];
 				}
 			}
 			else if(return_key){

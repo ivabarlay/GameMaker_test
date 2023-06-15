@@ -6,9 +6,8 @@ function initStats(_x, _y) constructor {
 	name = "";
 	isAlly = false;
 	hp = 0;
+	mp = 0;
 	damage = 0;
-	
-	
 };
 
 unitStats = new initStats(x, y);
