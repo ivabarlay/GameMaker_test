@@ -47,7 +47,16 @@ function scr_check_hp_units(){
 	for(var i = 0;  i < ds_list_size(global.unitsInstances); i++){
 		if(global.unitsInstances[| i].unitStats.hp <= 0){
 			instance_destroy(global.unitsInstances[| i]);
-			
 		}
 	}
+}
+
+function scr_init_stats(unit, damage, name, hp, mp, player, isAlly){
+	unit.unitStats.damage = damage;
+	unit.unitStats.name = name;
+	unit.unitStats.hp = hp;
+	unit.unitStats.hp_max = hp;
+	unit.unitStats.mp = mp;
+	unit.unitStats.player = player;
+	unit.unitStats.isAlly = isAlly;
 }

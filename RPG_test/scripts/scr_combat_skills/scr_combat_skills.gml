@@ -1,4 +1,4 @@
-function ice_spell(unitAttacking, unitDamaged){
+function que_si_marco(unitAttacking, unitDamaged){
 	unitDamaged.unitStats.hp -= 30;
 }
 

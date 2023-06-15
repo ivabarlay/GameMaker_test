@@ -2,7 +2,7 @@ whichPlayerIsSelecting = obj_combat_manager.whichPlayerIsSelecting;
 
 draw_set_font(global.font_main);
 
-_w = room_width
+var _w = room_width
 
 draw_sprite_stretched(sprite_index, image_index, 0, 330, 1.3*_w/3, 150)
 draw_sprite_stretched(sprite_index, image_index, 1.3*_w/3, 330, (1.7*_w)/3, 150)
@@ -69,13 +69,13 @@ if(obj_combat_manager.combatPhase == phase.chooseAction
 		
 		case 1: 
 		var player = global.unitsInstances[| obj_combat_manager.turnSelector].unitStats.player;
-		draw_sprite_stretched(sprite_index, image_index, 50, 310, 0.3 * _w, 150);
+		draw_sprite_stretched(sprite_index, image_index, 50, 310, 0.4 * _w, 150);
 		for(var i = 0; i < ds_list_size(global.playerSkills[? player]); i++){
 			var skillsList = parseSkillsToString(global.playerSkills[? player]);
 			var _c = c_white;
 			if(i == obj_combat_manager.posOption){
 				_c = c_yellow;	
-				draw_sprite_ext(spr_mano, image_index, 50 + ds_list_max_string_width(skillsList),
+				draw_sprite_ext(spr_mano, image_index, 40 + ds_list_max_string_width(skillsList),
 				310 + op_border*2 + op_space*i, 1, 1, 180, c_white, 1);
 			}
 			draw_text_transformed_color(50 + op_border, 310 + op_border + op_space*i,
@@ -83,6 +83,25 @@ if(obj_combat_manager.combatPhase == phase.chooseAction
 		}
 		break;
 	}
+}
+
+if(obj_combat_manager.combatPhase == phase.chooseUnit) &&
+	(global.unitsInstances[| obj_combat_manager.turnSelector].unitStats.isAlly){
+	var unit = global.enemyInstances[| obj_combat_manager.posUnit];
+	var _x = unit.unitStats.x;	
+	var _y = unit.unitStats.y;	
+	var border = 20;
+	var _str = unit.unitStats.name + "            "  + string(unit.unitStats.hp)
+		+ " / " + string(unit.unitStats.hp_max);
+	
+	draw_sprite_ext(spr_mano, image_index, _x - border, _y + border,
+		1, 1, 0, c_white, 1);
+	
+	draw_sprite_stretched(sprite_index, image_index, 0, 0,
+	_w, 75);
+	
+	draw_text_transformed(border, border, _str, 1, 1, 0);
+	
 }
 
 

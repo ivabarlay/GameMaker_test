@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_combat_unit",
-    "path": "sprites/spr_combat_unit/spr_combat_unit.yy",
+    "name": "spr_placeholder_rig",
+    "path": "sprites/spr_placeholder_rig/spr_placeholder_rig.yy",
   },
   "spriteMaskId": null,
   "visible": true,
