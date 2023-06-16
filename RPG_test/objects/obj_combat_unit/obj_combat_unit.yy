@@ -29,9 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder_rig",
-    "path": "sprites/spr_placeholder_rig/spr_placeholder_rig.yy",
+    "name": "spr_placeholder_combat",
+    "path": "sprites/spr_placeholder_combat/spr_placeholder_combat.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_placeholder_combat",
+    "path": "sprites/spr_placeholder_combat/spr_placeholder_combat.yy",
+  },
   "visible": true,
 }

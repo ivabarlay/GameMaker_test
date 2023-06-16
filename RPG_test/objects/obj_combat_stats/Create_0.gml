@@ -13,8 +13,8 @@ scr_init_stats(instance4, 20, "Enemigo2", 100, 100, 0, false);
 
 
 global.playerSkills[? MARCOS][| 0] = que_si_marco;
-global.playerSkills[? MARCOS][| 1] = navaja_git;
-global.playerSkills[? IVAN][| 0] = navaja_git;
+global.playerSkills[? MARCOS][| 1] = navaja_gitana;
+global.playerSkills[? IVAN][| 0] = navaja_gitana;
 
 global.allyInstances = ds_list_create();
 global.enemyInstances = ds_list_create();
