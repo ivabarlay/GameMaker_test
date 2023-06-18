@@ -2,8 +2,8 @@ whichPlayerIsSelecting = obj_combat_manager.whichPlayerIsSelecting;
 
 draw_set_font(global.font_main);
 
-var _w = room_width;
-var _y = 380;
+_w = room_width;
+_y = 380;
 
 draw_sprite_stretched(sprite_index, image_index, 0, _y, 1.3*_w/3, 100)
 draw_sprite_stretched(sprite_index, image_index, 1.3*_w/3, _y, (1.7*_w)/3, 100)
@@ -89,23 +89,17 @@ if(obj_combat_manager.combatPhase == phase.chooseAction
 if(obj_combat_manager.combatPhase == phase.chooseUnit) &&
 	(global.unitsInstances[| obj_combat_manager.turnSelector].unitStats.isAlly){
 	var unit = global.enemyInstances[| obj_combat_manager.posUnit];
-	var _x = unit.unitStats.x + 20;	
-	var _y = unit.unitStats.y*1.35;	
 	var border = 20;
 	var _str = unit.unitStats.name + "            "  + string(unit.unitStats.hp)
 		+ " / " + string(unit.unitStats.hp_max);
 	
-	draw_sprite_ext(spr_mano_combat, image_index, _x,
-		_y, 1, 1, 0, c_white, 1);
-	
-	show_debug_message(_y)
 	draw_sprite_stretched(sprite_index, image_index, 0, 0,
 	_w, 75);
 	
-	draw_text_transformed(border, border, _str, 1, 1, 0);
-	
-	
+	draw_text_transformed(border, border, _str, 1, 1, 0);	
 }
+
+
 
 
 
