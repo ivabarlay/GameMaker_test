@@ -6,22 +6,20 @@
 
 
 function drawHand(rotation, i){
-	draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 105 + offset + op_space * i, 170, 1, 1, rotation, c_white, 1);	
+	draw_sprite_ext(spr_mano_inventory, -bbox_bottom,
+		_x + offset + op_space * i,
+		_y + 70*global.height_diff, global.width_diff, global.height_diff, rotation, c_white, 1);	
 }
 
 function drawButton(sprite, i){
-	draw_sprite_stretched(sprite, -bbox_bottom, 92 + offset + op_space*i, 200, 22, 22);
-}
-
-function drawBoxes(i){
-	var _c = c_black;
-	draw_rectangle_color(80 + offset + op_space*i, 230, 125 + offset + op_space*i, 190, _c, _c, _c, _c, false);		
+	draw_sprite_stretched(sprite, -bbox_bottom, 85 + 20*global.width_diff  + offset + op_space*i,
+		170 + 110*global.height_diff, 22*2, 22*2);
 }
 
 function drawButtonPlayer(){
-		var _c = c_black;
-		draw_rectangle_color(82, 135, 133, 185, _c, _c, _c, _c, false);		
-		draw_sprite_ext(spr_menu_unequip, bbox_bottom, 92, 145, 2, 2, 0, c_white, 1);
+		draw_sprite_ext(spr_menu_unequip,
+			bbox_bottom, _x + 10*global.width_diff, _y + 40*global.height_diff,
+			2*global.width_diff, 2*global.height_diff, 0, c_white, 1);
 }
 
 function scr_scroll_inventory(){
@@ -102,38 +100,48 @@ function scr_drawSpritesInventory(hasSelected){
 	}
 	
 	if(op_length > 0){
-	for(var i = 0; i < 3; i++){
-		if(i < op_length - scrollPos * 3){
-			draw_sprite_stretched(spritesInventory[|i + scrollPos * 3], -bbox_bottom, 90 + offset + op_space*i, 110, 40, 40);
+		for(var i = 0; i < 3; i++){
+			if(i < op_length - scrollPos * 3){
+				draw_sprite_stretched(spritesInventory[|i + scrollPos * 3],
+					-bbox_bottom, 60*global.width_diff + offset + op_space*i,
+					110*global.height_diff, 40*global.width_diff, 40*global.height_diff);
+			}
 		}
-	}
 	
 	
-	if (position > 2) {
-		drawHand(rotation, 2);
-	}
-}	
+		if (position > 2) {
+			drawHand(rotation, 2);
+		}
+	}	
 }
 
 function scr_draw_menu_players(){
 	var position = posPlayerOption % 3;
+	var xscale = global.width_diff;
+	var yscale = global.height_diff;
 	
-	draw_sprite_stretched(sprite_index, -bbox_bottom, 150, 96, 170, 144);
+	draw_sprite_stretched(sprite_index, -bbox_bottom, 150, 96, 140*xscale, 135*yscale);
 	
 	for(var i = 0; i < 6; i++){
 		if(i < 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i], -bbox_bottom, 190 + 40 * i, 120, 1.5, 1.5, 0, c_white, 1);
+			draw_sprite_ext(obj_game.spritesPlayer[i],
+				-bbox_bottom, 210 + 40 * i*xscale,
+				80*yscale, 1.5*xscale, 1.5*yscale, 0, c_white, 1);
 		}
 		if(i >= 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i], -bbox_bottom, 190 + 40 * (i-3), 180, 1.5, 1.5, 0, c_white, 1);
+			draw_sprite_ext(obj_game.spritesPlayer[i],
+				-bbox_bottom, 210 + 40 * (i-3)*xscale,
+				140*yscale, 1.5*xscale, 1.5*yscale, 0, c_white, 1);
 		}
 		
 		if(posPlayerOption < 3){
-			draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 190 + 40 * position, 150, 1, 1, 180, c_white, 1);	
+			draw_sprite_ext(spr_mano_inventory,
+				-bbox_bottom, 210 + 80 * position, 210, xscale, yscale, 180, c_white, 1);	
 		}
 		
 		if(posPlayerOption <= 5 && posPlayerOption >= 3){
-			draw_sprite_ext(spr_mano_inventory, -bbox_bottom, 190 + 40 * position, 210, 1, 1, 180, c_white, 1);	
+			draw_sprite_ext(spr_mano_inventory,
+				-bbox_bottom, 210 + 80 * position, 340, xscale, yscale, 180, c_white, 1);	
 		}
 	}
 }

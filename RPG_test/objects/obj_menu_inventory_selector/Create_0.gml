@@ -1,13 +1,13 @@
 width = 170;
 height = 144;
-op_space = 55;
+op_space = 100;
 pos = 0;
 posOption = 0;
 posPlayerOption = 0;
 scrollPos = 0;
 inv = noone;
 hasSelected = 0;
-offset = 70;
+offset = 170;
 
 selectedItemType = noone;
 

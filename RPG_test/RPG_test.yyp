@@ -137,11 +137,11 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_inst","path":"rooms/rm_inst/rm_inst.yy",},},
-    {"roomId":{"name":"rm_combat_cave","path":"rooms/rm_combat_cave/rm_combat_cave.yy",},},
-    {"roomId":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},
+    {"roomId":{"name":"rm_combat_cave","path":"rooms/rm_combat_cave/rm_combat_cave.yy",},},
+    {"roomId":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
