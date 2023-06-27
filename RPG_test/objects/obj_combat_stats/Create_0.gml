@@ -1,15 +1,18 @@
-instance1 = global.unitsInstances[|0];
-instance2 = global.unitsInstances[|1];
-instance3 = global.unitsInstances[|2];
-instance4 = global.unitsInstances[|3];
+var ally1 = global.unitsInstances[|0];
+var enemy1 = global.unitsInstances[|1];
+var ally2 = global.unitsInstances[|2];
+var enemy2 = global.unitsInstances[|3];
 
-scr_init_stats(instance1, 20, "Aliado1", 100, 100, MARCOS, true);
-
-scr_init_stats(instance2, 40, "Enemigo1", 50, 50, 0, false);
-
-scr_init_stats(instance3, 10, "Aliado2", 100, 100, IVAN, true);
-
-scr_init_stats(instance4, 20, "Enemigo2", 100, 100, 0, false);
+var ally1 = new unit_init_constructor(global.unitsInstances[|0], 
+	 20, "Aliado1", 100, 100, MARCOS, true);
+var ally2 = new unit_init_constructor(global.unitsInstances[|1], 
+	 40, "Enemigo1", 50, 100, 0, false);
+var enemy1 = new unit_init_constructor(global.unitsInstances[|2], 
+	 10, "Aliado2", 100, 100, IVAN, true);
+var enemy2 = new unit_init_constructor(global.unitsInstances[|3], 
+	 20, "Enemigo2", 100, 100, 0, false);
+	 
+scr_init_units_stats(ally1, ally2, enemy1, enemy2);
 
 
 global.playerSkills[? MARCOS][| 0] = que_si_marco;

@@ -13,3 +13,4 @@ hold = 0; //if we hold 'Z', the text will render faster
 
  //get the number of characters in the first message
 message_length = 0;
+final_script = undefined;

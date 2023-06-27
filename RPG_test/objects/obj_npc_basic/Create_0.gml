@@ -9,3 +9,4 @@ messages[4] = "Others use them for fights.";
 messages[5] = "Myself...";
 messages[6] = "I study Pokemon as a profession.";
 
+final_script = game_end;

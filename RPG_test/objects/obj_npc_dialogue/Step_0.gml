@@ -1,5 +1,5 @@
 accept_key = keyboard_check_pressed(ord("E"));
-show_debug_message(messages[message_current])
+//show_debug_message(messages[message_current])
 
 if (characters < message_length) { //if current character count is less than the amount in current message* 
     hold = keyboard_check(vk_space); //hold is true or false if we hold 'Z' or not

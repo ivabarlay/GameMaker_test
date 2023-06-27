@@ -60,3 +60,28 @@ function scr_init_stats(unit, damage, name, hp, mp, player, isAlly){
 	unit.unitStats.player = player;
 	unit.unitStats.isAlly = isAlly;
 }
+
+function unit_init_constructor (unit, damage, name, hp, mp, player, isAlly) constructor{
+	self.unit = unit;
+	self.damage = damage;
+	self.name = name;
+	self.hp = hp;
+	self.mp = mp;
+	self.player = player;
+	self.isAlly = isAlly;
+}
+
+function scr_init_units_stats(ally1, ally2, enemy1, enemy2){
+	 
+	scr_init_stats(ally1.unit, ally1.damage, ally1.name,
+		ally1.hp, ally1.mp, ally1.player, ally1.isAlly);
+
+	scr_init_stats(enemy1.unit, enemy1.damage, enemy1.name,
+		enemy1.hp, enemy1.mp, enemy1.player, enemy1.isAlly);
+
+	scr_init_stats(ally2.unit, ally2.damage, ally2.name,
+		ally2.hp, ally2.mp, ally2.player, ally2.isAlly);
+
+	scr_init_stats(enemy2.unit, enemy2.damage, enemy2.name,
+		enemy2.hp, enemy2.mp, enemy2.player, enemy2.isAlly);
+}

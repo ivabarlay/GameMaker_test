@@ -30,9 +30,8 @@
 -129,0,-23,50,-17,0,2,50,2,-19,3,2,4,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,
 19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,
 19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,
-19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,34,-19,35,2,36,50,-17,0,-23,50,-17,0,
-3,50,0,50,-17,0,3,50,0,50,-17,0,1,50,-21,0,1,50,-17,0,1,50,-21,0,1,50,-17,0,1,50,-21,0,1,50,-17,0,1,50,-21,0,
-1,50,-17,0,1,50,-21,0,1,50,-17,0,1,50,-21,0,1,50,-128,0,],"TileDataFormat":1,},"tilesetId":{"name":"tile_combat_plantilla","path":"tilesets/tile_combat_plantilla/tile_combat_plantilla.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,18,-19,19,2,20,50,-17,0,2,50,34,-19,35,2,36,50,-17,0,-23,50,-408,0,
+],"TileDataFormat":1,},"tilesetId":{"name":"tile_combat_plantilla","path":"tilesets/tile_combat_plantilla/tile_combat_plantilla.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {

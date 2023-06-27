@@ -16,7 +16,7 @@ for(var i = 0; i < op_length; i++){
 	var _c = c_white;
 	if pos == i {_c = c_yellow;}
 	draw_text_transformed_color(250 + op_border * i, 140, option[i],
-							1/2*xscale, 1/2*yscale, 0, _c, _c, _c, _c, 1);
+		1/2*xscale, 1/2*yscale, 0, _c, _c, _c, _c, 1);
 }
 	
 
