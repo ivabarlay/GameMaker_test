@@ -1,4 +1,4 @@
-if(self.startPlayerPosition != noone){
+if(self.startPlayerPosition != noone && instance_exists(obj_player)){
 	obj_player.x = startPlayerPosition[0];
 	obj_player.y = startPlayerPosition[1];
 }

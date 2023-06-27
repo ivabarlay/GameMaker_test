@@ -114,6 +114,7 @@ function scr_interact_npc(){
 		obj_npc_dialogue.message_length = string_length(npcInteracted.messages[0]);
 		obj_npc_dialogue.message_end = array_length(npcInteracted.messages) - 1;
 		obj_npc_dialogue.final_script = npcInteracted.final_script;
+		obj_npc_dialogue.arguments = npcInteracted.arguments;
 		
 		ds_list_clear(npc_list);
 	}

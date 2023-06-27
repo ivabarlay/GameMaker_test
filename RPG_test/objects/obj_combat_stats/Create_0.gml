@@ -1,17 +1,9 @@
-var ally1 = global.unitsInstances[|0];
-var enemy1 = global.unitsInstances[|1];
-var ally2 = global.unitsInstances[|2];
-var enemy2 = global.unitsInstances[|3];
+var ally1 = obj_game.ally1_stats;
+var ally2 = obj_game.ally2_stats;
+var enemy1 = obj_game.enemy1_stats;
+var enemy2 = obj_game.enemy2_stats;
 
-var ally1 = new unit_init_constructor(global.unitsInstances[|0], 
-	 20, "Aliado1", 100, 100, MARCOS, true);
-var ally2 = new unit_init_constructor(global.unitsInstances[|1], 
-	 40, "Enemigo1", 50, 100, 0, false);
-var enemy1 = new unit_init_constructor(global.unitsInstances[|2], 
-	 10, "Aliado2", 100, 100, IVAN, true);
-var enemy2 = new unit_init_constructor(global.unitsInstances[|3], 
-	 20, "Enemigo2", 100, 100, 0, false);
-	 
+show_debug_message(ally1)
 scr_init_units_stats(ally1, ally2, enemy1, enemy2);
 
 

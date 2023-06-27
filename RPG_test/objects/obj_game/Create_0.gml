@@ -35,6 +35,10 @@ for(var i = 0; i < 6; i++){
 
 randomize();
 
+ally1_stats = undefined;
+ally2_stats = undefined;
+enemy1_stats = undefined;
+enemy2_stats = undefined;
 
 
 

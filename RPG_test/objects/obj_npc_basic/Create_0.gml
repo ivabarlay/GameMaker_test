@@ -9,4 +9,13 @@ messages[4] = "Others use them for fights.";
 messages[5] = "Myself...";
 messages[6] = "I study Pokemon as a profession.";
 
-final_script = game_end;
+var ally1_stats = new unit_init_constructor(20, "Aliado1", 100, 100, MARCOS, true);
+var ally2_stats = new unit_init_constructor(40, "Enemigo1", 50, 100, 0, false);
+var enemy1_stats = new unit_init_constructor(10, "Aliado2", 100, 100, IVAN, true);
+var enemy2_stats = new unit_init_constructor(20, "Enemigo2", 100, 100, 0, false);
+
+
+arguments = [ally1_stats, ally2_stats, enemy1_stats, enemy2_stats];
+final_script = scr_init_combat;
+
+
