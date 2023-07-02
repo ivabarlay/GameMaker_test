@@ -110,7 +110,7 @@ switch(combatPhase){
 		break;
 	
 		case phase.win:
-			game_end();
+			scr_win();
 		break;
 	
 		case phase.lose:

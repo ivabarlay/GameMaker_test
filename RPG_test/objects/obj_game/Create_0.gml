@@ -39,6 +39,7 @@ ally1_stats = undefined;
 ally2_stats = undefined;
 enemy1_stats = undefined;
 enemy2_stats = undefined;
+combat_room = undefined;
 
 
 

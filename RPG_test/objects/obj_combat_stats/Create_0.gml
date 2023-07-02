@@ -7,10 +7,6 @@ show_debug_message(ally1)
 scr_init_units_stats(ally1, ally2, enemy1, enemy2);
 
 
-global.playerSkills[? MARCOS][| 0] = que_si_marco;
-global.playerSkills[? MARCOS][| 1] = navaja_gitana;
-global.playerSkills[? IVAN][| 0] = navaja_gitana;
-
 global.allyInstances = ds_list_create();
 global.enemyInstances = ds_list_create();
 

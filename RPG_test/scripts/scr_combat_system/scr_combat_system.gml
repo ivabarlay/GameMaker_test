@@ -88,3 +88,7 @@ function scr_init_units_stats(ally1, ally2, enemy1, enemy2){
 	scr_init_stats(enemy2_unit, enemy2.damage, enemy2.name,
 		enemy2.hp, enemy2.mp, enemy2.player, enemy2.isAlly);
 }
+
+function scr_win(){
+	room_goto(obj_game.combat_room)
+}

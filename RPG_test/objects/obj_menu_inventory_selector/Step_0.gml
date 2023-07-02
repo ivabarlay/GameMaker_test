@@ -69,5 +69,3 @@ if(op_length > 0){
 	}
 }
 
-depth = -2;		
-
