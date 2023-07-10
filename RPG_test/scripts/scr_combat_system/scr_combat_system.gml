@@ -37,8 +37,12 @@ function scr_change_pos_unit(){
 	var op_length = ds_list_size(global.enemyInstances);
 	show_debug_message(op_length)
 	posUnit += down_key - up_key; 
-	if posUnit >= op_length {posUnit = 0};
-	else if posUnit < 0 {posUnit = op_length - 1};	
+	if (posUnit >= op_length) {
+		posUnit = 0;
+	}
+	else {
+		if posUnit < 0 {posUnit = op_length - 1;}
+	}
 	
 	
 }

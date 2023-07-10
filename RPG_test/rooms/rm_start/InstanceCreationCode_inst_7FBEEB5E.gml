@@ -1,1 +1,1 @@
-startPlayerPosition = [20, 103];
+isExit = true;

@@ -3,7 +3,7 @@ height = 239;
 pos = 0;
 
 
-op_border = 50-23/2;
+op_border = 77/2;
 op_space = 50;
 op_length = 0;
 

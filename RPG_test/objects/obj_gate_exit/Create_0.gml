@@ -1,1 +1,0 @@
-startPlayerPosition = noone;

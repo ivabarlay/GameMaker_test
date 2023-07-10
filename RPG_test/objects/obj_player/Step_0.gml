@@ -18,8 +18,6 @@ scr_player_sprite();
 //collisions
 scr_collision();
 
-
-
 //move the player
 x += xspd;
 y += yspd;

@@ -1,1 +1,2 @@
-startPlayerPosition = noone;
+startPlayerPosition = undefined;
+isExit = undefined;
