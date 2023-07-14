@@ -34,7 +34,7 @@ switch(combatPhase){
 			scr_change_pos_option();
 		//	show_debug_message(unitSelecting)
 			
-			if(accept_key){
+			if(accept_key || !unitSelecting.unitStats.isAlly){
 				if(unitSelecting.unitStats.isAlly == true){
 					switch(menu_level){
 						case 0: switch(global.options[? posOption]){
@@ -69,7 +69,7 @@ switch(combatPhase){
 		
 		case phase.chooseUnit:
 			scr_change_pos_unit();
-			if(accept_key){
+			if(accept_key || !unitSelecting.unitStats.isAlly){
 				combatPhase = phase.process;
 				if(unitSelecting.unitStats.isAlly == true){
 					selectedUnit = global.enemyInstances[|posUnit];

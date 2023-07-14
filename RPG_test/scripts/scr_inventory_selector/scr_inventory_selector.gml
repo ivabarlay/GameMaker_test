@@ -59,6 +59,12 @@ function scr_changePosOption(obj){
 }
 
 function scr_changePosPlayerOption(obj){
+	var _f = function(_element, _index){
+		return (_element > undefined);
+	}
+	
+	
+	var num_players = array_find_index(global.spritesPlayer, _f) + 1;
 	if((global.selectedMenu == obj)){
 		posPlayerOption += down_key - up_key; 
 		if(posPlayerOption < 3){
@@ -70,6 +76,7 @@ function scr_changePosPlayerOption(obj){
 	}
 	if posPlayerOption >= 6 {posPlayerOption = 5};
 	if posPlayerOption < 0 {posPlayerOption = 0};
+	if posPlayerOption >= num_players {posPlayerOption = num_players}
 
 }
 

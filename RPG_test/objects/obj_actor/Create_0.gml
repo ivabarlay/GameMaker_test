@@ -5,5 +5,3 @@ _w = room_width;
 _y = 380;
 
 optionsKeys = parseOptionsToString(ds_map_keys_to_array(global.options));
-
-
