@@ -12,3 +12,5 @@ op_length = 0;
 
 global.selectedMenu = obj_menu_player;
 ds_list_add(global.menuPile, obj_menu_player);
+
+depth = -2; 

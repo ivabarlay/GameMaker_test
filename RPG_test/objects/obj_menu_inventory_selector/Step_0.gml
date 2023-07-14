@@ -4,7 +4,7 @@ move_up_key = keyboard_check_pressed(ord("W"));
 move_down_key = keyboard_check_pressed(ord("S"));
 accept_key = keyboard_check_pressed(vk_space);
 
-inv = global.inv[?selectedItemType];
+var inv = global.inv[?selectedItemType];
 
 item = noone;
 
@@ -27,8 +27,9 @@ else if hasSelected == MENU_SELECT_OPTION {
 	scr_changePosOption(obj_menu_inventory_selector);
 	if(accept_key){
 		switch(posOption){
-							//equip object
-			case EQUIP: hasSelected = MENU_SELECT_NAME;
+						//equip object
+			case EQUIP: 
+					hasSelected = MENU_SELECT_NAME;
 					break;
 			case DETAILS: //show details of object
 					break;
@@ -57,7 +58,7 @@ else if(hasSelected == MENU_SELECT_UNEQUIP && global.selectedMenu == obj_menu_in
 		hasSelected = MENU_SELECT_ITEM;	
 	}	
 	if(accept_key){
-		instance_create_depth(0, 0, -bbox_bottom, obj_menu_player);	
+		instance_create_depth(0, 0, image_index, obj_menu_player);	
 	}
 }
 

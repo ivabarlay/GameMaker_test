@@ -119,29 +119,31 @@ function scr_draw_menu_players(){
 	var position = posPlayerOption % 3;
 	var xscale = global.width_diff;
 	var yscale = global.height_diff;
+	var _sprites = global.spritesPlayer;
 	
-	draw_sprite_stretched(sprite_index, -bbox_bottom, 150, 96, 140*xscale, 135*yscale);
+	draw_sprite_stretched(spr_menu_game, image_index, 150, 96, 140*xscale, 135*yscale);
 	
 	for(var i = 0; i < 6; i++){
-		if(i < 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i],
-				-bbox_bottom, 210 + 40 * i*xscale,
+		var current_sprite = _sprites[i];
+		if(i < 3 && current_sprite != undefined){
+			draw_sprite_ext(_sprites[i],
+				image_index, 210 + 40 * i*xscale,
 				80*yscale, 1.5*xscale, 1.5*yscale, 0, c_white, 1);
 		}
-		if(i >= 3){
-			draw_sprite_ext(obj_game.spritesPlayer[i],
-				-bbox_bottom, 210 + 40 * (i-3)*xscale,
+		else if(i >= 3 && current_sprite != undefined){
+			draw_sprite_ext(_sprites[i],
+				image_index, 210 + 40 * (i-3)*xscale,
 				140*yscale, 1.5*xscale, 1.5*yscale, 0, c_white, 1);
 		}
 		
 		if(posPlayerOption < 3){
 			draw_sprite_ext(spr_mano_inventory,
-				-bbox_bottom, 210 + 80 * position, 210, xscale, yscale, 180, c_white, 1);	
+				image_index, 210 + 80 * position, 210, xscale, yscale, 180, c_white, 1);	
 		}
 		
 		if(posPlayerOption <= 5 && posPlayerOption >= 3){
 			draw_sprite_ext(spr_mano_inventory,
-				-bbox_bottom, 210 + 80 * position, 340, xscale, yscale, 180, c_white, 1);	
+				image_index, 210 + 80 * position, 340, xscale, yscale, 180, c_white, 1);	
 		}
 	}
 }

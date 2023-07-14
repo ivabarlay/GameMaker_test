@@ -1,5 +1,5 @@
 startPlayerPosition = noone;
-spritesPlayer = undefined;
+global.spritesPlayer = array_create(6);
 
 global.selectedMenu = obj_menu_game;
 global.menuPile = ds_list_create();
@@ -9,8 +9,9 @@ global.unitsInstances = ds_list_create();
 
 //Init players' sprites
 for(var i = 0; i < 6; i++) {
-	spritesPlayer[i] = spr_placeholder_down;
+	global.spritesPlayer[i] = undefined;
 }
+global.spritesPlayer[0] = spr_placeholder_down;
 
 //Init inventory
 global.inv = ds_map_create();
