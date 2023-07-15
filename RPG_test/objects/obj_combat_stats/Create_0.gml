@@ -3,7 +3,7 @@ var ally2 = obj_game.ally2_stats;
 var enemy1 = obj_game.enemy1_stats;
 var enemy2 = obj_game.enemy2_stats;
 
-show_debug_message(ally1)
+//show_debug_message(ally1)
 scr_init_units_stats(ally1, ally2, enemy1, enemy2);
 
 
@@ -21,4 +21,4 @@ for(var i = 0; i < ds_list_size(global.unitsInstances); i++){
 }
 
 	
-	
+		

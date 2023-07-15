@@ -10,7 +10,7 @@ up_key = keyboard_check_pressed(ord("W"));
 accept_key = keyboard_check_pressed(vk_space);
 return_key = keyboard_check_pressed(vk_enter);
 
-
+scr_check_hp_units();
 switch(combatPhase){
 		case phase.init:
 			combatPhase = phase.startTurn;		

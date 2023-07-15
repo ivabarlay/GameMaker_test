@@ -2,7 +2,7 @@ whichPlayerIsSelecting = obj_combat_manager.whichPlayerIsSelecting;
 
 draw_set_font(global.font_main);
 
-
+scr_check_hp_units();
 
 draw_sprite_stretched(sprite_index, image_index, 0, _y, 1.3*_w/3, 100)
 draw_sprite_stretched(sprite_index, image_index, 1.3*_w/3, _y, (1.7*_w)/3, 100)

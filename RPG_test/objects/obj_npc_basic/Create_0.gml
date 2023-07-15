@@ -10,8 +10,8 @@ messages[5] = "Myself...";
 messages[6] = "I study Pokemon as a profession.";
 
 var ally1_stats = new unit_init_constructor(20, "Aliado1", 100, 100, MARCOS, true);
-var ally2_stats = new unit_init_constructor(40, "Enemigo1", 50, 100, 0, false);
-var enemy1_stats = new unit_init_constructor(10, "Aliado2", 100, 100, IVAN, true);
+var enemy1_stats = new unit_init_constructor(40, "Enemigo1", 50, 100, 0, false);
+var ally2_stats = new unit_init_constructor(10, "Aliado2", 100, 100, IVAN, true);
 var enemy2_stats = new unit_init_constructor(20, "Enemigo2", 100, 100, 0, false);
 
 
