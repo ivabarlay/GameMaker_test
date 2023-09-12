@@ -39,7 +39,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.8.0.98",
   },
   "resources": [
     {"id":{"name":"spr_marcos_down","path":"sprites/spr_marcos_down/spr_marcos_down.yy",},},
@@ -54,7 +54,7 @@
     {"id":{"name":"spr_basic_chest","path":"sprites/spr_basic_chest/spr_basic_chest.yy",},},
     {"id":{"name":"rm_cave1","path":"rooms/rm_cave1/rm_cave1.yy",},},
     {"id":{"name":"spr_menu_game","path":"sprites/spr_menu_game/spr_menu_game.yy",},},
-    {"id":{"name":"obj_npc_basic","path":"objects/obj_npc_basic/obj_npc_basic.yy",},},
+    {"id":{"name":"obj_npc_test","path":"objects/obj_npc_test/obj_npc_test.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"spr_placeholder_down","path":"sprites/spr_placeholder_down/spr_placeholder_down.yy",},},
@@ -119,7 +119,7 @@
     {"id":{"name":"obj_basic_chest","path":"objects/obj_basic_chest/obj_basic_chest.yy",},},
     {"id":{"name":"scr_item_enum","path":"scripts/scr_item_enum/scr_item_enum.yy",},},
     {"id":{"name":"spr_marcos_up","path":"sprites/spr_marcos_up/spr_marcos_up.yy",},},
-    {"id":{"name":"obj_npc_basic2","path":"objects/obj_npc_basic2/obj_npc_basic2.yy",},},
+    {"id":{"name":"obj_npc_test2","path":"objects/obj_npc_test2/obj_npc_test2.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},},
@@ -142,6 +142,7 @@
     {"roomId":{"name":"rm_combat_cave","path":"rooms/rm_combat_cave/rm_combat_cave.yy",},},
     {"roomId":{"name":"rm_combat_test","path":"rooms/rm_combat_test/rm_combat_test.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"texturegroup1","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

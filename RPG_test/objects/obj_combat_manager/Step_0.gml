@@ -85,14 +85,20 @@ switch(combatPhase){
 		break;
 	
 		case phase.process:
-			menu_level = 0;
-			combatPhase = phase.endTurn;
+			if(timer > 0){
+				timer -= 1/room_speed;
+			}
 			
+			else{
+				timer = timer_max;
+				menu_level = 0;
+				combatPhase = phase.endTurn;
 			
-			method_call(scr, [unitSelecting, selectedUnit]);
-			scr_check_hp_units();
-			turnSelector++;
-			turnSelector = turnSelector % ds_list_size(global.unitsInstances);
+				method_call(scr, [unitSelecting, selectedUnit]);
+				scr_check_hp_units();
+				turnSelector++;
+				turnSelector = turnSelector % ds_list_size(global.unitsInstances);
+			}
 
 		break;
 		

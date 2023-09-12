@@ -34,6 +34,9 @@ posUnit = 0;
 menu_level = 0;
 op_length = 0;
 
+timer = 0;
+timer_max = timer;
+
 for(var i = 0; i < 2; i++){ 
 	turnOrder[i] = i;	
 }
