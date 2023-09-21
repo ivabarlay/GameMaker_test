@@ -14,5 +14,5 @@ if(instance_exists(obj_player) && _return_key){
 }
 
 //Flag detector
-scr_check_test_flag();
+//scr_check_test_flag();
 

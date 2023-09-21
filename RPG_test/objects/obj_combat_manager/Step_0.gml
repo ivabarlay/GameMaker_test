@@ -50,7 +50,7 @@ switch(combatPhase){
 					
 						case 1: scr = global.playerSkills[? whichPlayerIsSelecting][| posOption];
 								if(scr != undefined){
-									combatPhase = phase.chooseUnit;
+									combatPhase = phase.chooseUnit; 
 								}
 								break;
 					}

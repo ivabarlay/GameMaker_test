@@ -8,5 +8,5 @@ ds_list_clear(global.roomItemsPicked);
 
 //Flags
 
-scr_test_flag();
+//scr_test_flag();
 
